@@ -156,7 +156,6 @@ header {
   line-height: 2;
 }
 
-
 .content-sobre-mi aside {
   border: 2px solid white;
   width: 30vh;
@@ -616,7 +615,6 @@ main {
 }
 
 @media (max-width: 820px) {
-
   header {
     height: 80px;
   }
