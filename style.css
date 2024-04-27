@@ -753,6 +753,10 @@ main {
     height: 80px;
   }
 
+  .evento_diploma_animado img {
+    width: 100%;
+  }
+
   .content-experiencia {
     margin-top: 175px;
   }
