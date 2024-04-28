@@ -1,8 +1,42 @@
+/*document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});*/
+
+var isScrolling;
+document.addEventListener(
+  "scroll",
+  function () {
+    window.clearTimeout(isScrolling);
+    var scrollbarStyle = document.createElement("style");
+    scrollbarStyle.innerHTML = `
+      ::-webkit-scrollbar-thumb {
+          background-color: yellow; /* Cambia "yellow" al color que desees */
+      }`;
+    document.body.appendChild(scrollbarStyle);
+    isScrolling = setTimeout(function () {
+      var scrollbarStyle = document.createElement("style");
+      scrollbarStyle.innerHTML = `
+      ::-webkit-scrollbar-thumb {
+          background-color: #fff5; /* Cambia "#fff5" al color que desees */
+      }`;
+      document.body.appendChild(scrollbarStyle);
+    }, 300);
+  },
+  false
+);
+
 function cerrarMenuLateralPorClick() {
   let checkBoxHabilitadorMenuLateral =
     document.getElementById("check_menu_lateral");
   if (checkBoxHabilitadorMenuLateral.checked)
     checkBoxHabilitadorMenuLateral.checked = false;
+}
+
+function abrirMenuLateralPorClick() {
+  let checkBoxHabilitadorMenuLateral =
+    document.getElementById("check_menu_lateral");
+  if (!checkBoxHabilitadorMenuLateral.checked)
+    checkBoxHabilitadorMenuLateral.checked = true;
 }
 
 document
@@ -11,11 +45,16 @@ document
     cerrarMenuLateralPorClick();
   });
 
-document
-  .getElementById("boton_contactame")
-  .addEventListener("click", function (evt) {
+document.getElementById("cabecera").addEventListener("click", function (evt) {
+  if (
+    evt.target.id === "boton_abrir" ||
+    evt.target.id === "check_menu_lateral"
+  ) {
+    abrirMenuLateralPorClick();
+  } else {
     cerrarMenuLateralPorClick();
-  });
+  }
+});
 
 const avatarImg = document.getElementById("imagen_avatar");
 const avatarContainer = document.getElementById("avatar_container");

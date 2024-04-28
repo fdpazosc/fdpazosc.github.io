@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="cabecera">
     <input type="checkbox" name="check_menu_lateral" id="check_menu_lateral" />
     <h1 class="logo"><a href="#">PDave</a></h1>
     <nav class="menu_lateral">
@@ -32,8 +32,9 @@
     <div class="user-form-group">
       <a class="contactame" href="#" id="boton_contactame"><i class='bx bxs-chat'></i> Contactame</a>
       <label for="check_menu_lateral">
-        <i class="bx bx-menu menu"></i>
-        <i class="bx bx-x close-menu"></i>
+        <i class="bx bx-menu menu" id="boton_abrir"></i>
+        <!--<i class="bx bx-x close-menu" id="boton_cerrar"></i>-->
+        <i class="close-menu" id="boton_cerrar"></i>
       </label>
     </div>
   </header>
@@ -361,29 +362,145 @@
         <section>
           <article class="evento_diploma_animado">
             <a target="_blank" href="documentos/certificado_charla_davidpazos.pdf" class="link_circular_verde"><i
-              class='bx bxs-download'></i></a>
+                class='bx bxs-download'></i></a>
             <img src="images/certificado_charla_davidpazos.png" alt="Certificado Charla" width="500">
           </article>
           <article class="evento_diploma_animado">
             <a target="_blank" href="documentos/certificado_space_apps_2015.pdf" class="link_circular_verde"><i
-              class='bx bxs-download'></i></a>
+                class='bx bxs-download'></i></a>
             <img src="images/certificado_space_apps_2015.jpg" alt="Certificado Charla" width="500">
           </article>
         </section>
       </section>
     </article>
 
-    <!--<article>
+    <article>
       <section class="content-preparacion" id="titulo_preparacion">
         <h1>
           <i class='bx bxs-bookmarks'></i> Preparación
         </h1>
+        <h2>Académica</h2>
         <section>
-          <img src="images/certificado_charla_davidpazos.png" alt="Certificado Charla" width="500">
-          <img src="images/certificado_space_apps_2015.jpg" alt="Certificado Charla" width="500">
+          <div>
+            <a target="_blank" href="documentos/título de_machiller_unidad_educativa_julio_maria_matovelle.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/título de_machiller_unidad_educativa_julio_maria_matovelle.jpg" />
+            <span>Bachiller en Ciencias - Especialidad: Físico Matemático</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/titulo de_ingenieria_de_software_y_computación_puce.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/titulo de_ingenieria_de_software_y_computación_puce.jpg" />
+            <span>Ingeniería de Sistemas y Computación</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/titulo_de_master_en_ingenieria_de_software_y_computación_unir.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/titulo_de_master_en_ingenieria_de_software_y_computación_unir.jpg" />
+            <span>Master Universitario en Ingeniería de Software y Sistemas Informáticos</span>
+          </div>
+        </section>
+        <h2>Cursos</h2>
+        <h3><img
+            src="https://assets-global.website-files.com/6355acca8d905157a7de2e62/6596cd9a1cdd1824414d0112_63724d646ecb4bd4cbdf7440_LOGO%20NUCLIO%20DIGITAL%20SCHOOL-01-01.png"
+            alt="Nuclio"></h3>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/Curso_Introductorio_Full_Stack_Development.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_Introductorio_Full_Stack_Development.jpg" />
+            <span>Curso Introductorio Full Stack Development</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_Introductorio_Diseño_UX-UI.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_Introductorio_Diseño_UX-UI.jpg" />
+            <span>Curso Introductorio Diseño UX-UI</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_Introductorio_Data_Science_Nuclio.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_Introductorio_Data_Science_Nuclio.jpg" />
+            <span>Curso Introductorio Data Science</span>
+          </div>
+        </section>
+        <h3><img src="https://www.utn.edu.ec/wp-content/uploads/2021/06/CEDIA.png" alt="Cedia"></h3>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/Curso_de Programación_en_Shell_Script.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_de_Programación_en_Shell_Script.jpg" />
+            <span>Curso de programación en Shell Script</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de Virtualización_de_Servidores.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_de_Virtualización_de_Servidores.jpg" />
+            <span>Curso de Virtualización de Servidores</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_Adminiatración_de Servicios_de_Red.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_de_Adminiatración_de_Servicios_de_Red.jpg" />
+            <span>Curso de Administración de Servicios de Red</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_PHP_101.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_de_PHP_101.jpg" />
+            <span>Curso de PHP 101</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_PHP_RDF.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_de_PHP_RDF.jpg" />
+            <span>Curso de PHP RDF</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_Programación_Limpia_2.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/Curso_de_Programación_Limpia_2.jpg" />
+            <span>Curso de Programación Limpia 2</span>
+          </div>
+        </section>
+        <h3><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png"
+            alt="Nuclio"></h3>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/UDEMY_CodeIgniter_4.pdf">
+              <i class='bx bxs-download'></i>
+            </a>
+            <img src="images/UDEMY_CodeIgniter_4.jpg" />
+            <span>CodeIgniter 4 desde Cero + Integración con Bootstrap 4 o 5</span>
+          </div>
+        </section>
+        <h3><img src="https://seeklogo.com/images/P/platzi-logo-98005E6AD6-seeklogo.com.png" alt="Platzi"></h3>
+        <section>
+          
+        </section>
+        <h2>Certificaciones</h2>
+        <section>
+
+        </section>
+        <h2>Idiomas</h2>
+        <section>
+
         </section>
       </section>
-    </article>-->
+    </article>
 
   </main>
   <script src="script.js"></script>

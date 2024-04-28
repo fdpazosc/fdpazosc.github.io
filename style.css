@@ -39,6 +39,37 @@ header {
   z-index: 110;
 }
 
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+  right: 0; /* Alinea la barra de desplazamiento en el lado derecho */
+  z-index: 9999;
+}
+
+/* Estilos para el riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  width: 0px;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del riel */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #fff5; /* Color del pulgar */
+  border-radius: 6px; /* Radio de borde del pulgar */
+  border: 3px solid transparent; /* Borde del pulgar */
+  transition: background-color 0.3s ease-in-out; /* Transición de 0.3 segundos */
+}
+
+/* Estilos cuando se pasa el mouse sobre la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+  background-color: yellow; /* Color del pulgar al pasar el mouse */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento cuando se desplaza */
+::-webkit-scrollbar-thumb:active {
+  background-color: yellow; /* Color del pulgar al hacer clic */
+}
+
 .linea_vertical_central {
   margin-top: 240px;
   position: absolute;
@@ -269,6 +300,10 @@ header {
   font-size: 18px;
 }
 
+.user-form-group {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .contactame {
   border: rgba(255, 255, 255, 0.5) 2px solid;
   padding: 8px 16px;
@@ -318,7 +353,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 35px;
-  padding-top: 120px;
+  padding-top: 175px;
 }
 
 .content-proyectos-cards {
@@ -635,33 +670,10 @@ main {
   margin-top: 100px;
 }
 
-.content-preparacion {
-  margin-top: 150px;
-}
-
-.content-preparacion h1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 35px;
-  padding-top: 80px;
-}
-
-
-
-
-
-
-
-
-
-
-
 .evento_diploma_animado {
   height: 100%;
   position: relative;
-  margin: 0; /* Elimina el margen */
+  margin: 0;
   padding: 0;
 }
 
@@ -671,12 +683,13 @@ main {
 }
 
 .evento_diploma_animado img:last-child {
-  position:relative;
-  transition: all .3s ease;
+  position: relative;
+  transition: all 0.3s ease;
   z-index: 1;
   margin: 0;
   padding: 0;
   height: auto;
+  vertical-align: top;
 }
 .evento_diploma_animado img:last-child {
   box-shadow: 0 110px 110px -100px rgba(0, 30, 255, 0.5);
@@ -689,9 +702,9 @@ main {
   text-decoration: none;
   overflow: hidden;
   box-shadow: 2px 2px 3px black;
-  font-size: 35px;
-  width: 45px;
-  height: 45px;
+  font-size: 50px;
+  width: 70px;
+  height: 70px;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -705,12 +718,14 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateY(25%);
-  transition: .3s ease;
+  transform: translateY(0%);
+  transition: 0.3s ease;
   opacity: 0;
+  -webkit-tap-highlight-color: transparent;
 }
+
 .evento_diploma_animado img:last-child::before {
-  content: '';
+  content: "";
   position: relative;
   bottom: 0;
   height: 100%;
@@ -718,43 +733,198 @@ main {
     to bottom,
     transparent 10%,
     rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0 , 0) 95% 
+    rgba(0, 0, 0) 95%
   );
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
+
 .evento_diploma_animado img:last-child:hover {
-  transform: perspective(250px)
-             rotateX(10deg)
-             translateY(5%)
-             translateZ(0);
+  transform: perspective(250px) rotateX(10deg) translateY(5%) translateZ(0);
 }
+
 .evento_diploma_animado:hover img:last-child::before {
   opacity: 1;
 }
+
 .evento_diploma_animado:hover a:first-child {
   opacity: 1;
   transform: translateY(-100%);
 }
 
+.content-preparacion {
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+}
 
+.content-preparacion h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  padding-top: 140px;
+  margin-bottom: 50px;
+}
 
+.content-preparacion h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: yellow;
+}
 
+.content-preparacion h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 25px;
+}
 
+.content-preparacion h3 img {
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+}
 
+.content-preparacion section {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+  justify-content: center;
+}
 
+.content-preparacion section div {
+  flex-wrap: wrap;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: transform 0.4s ease;
+  flex-grow: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
 
+.content-preparacion section div img {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+}
 
+.content-preparacion section div a {
+  position: absolute;
+  z-index: 2;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black;
+  font-size: 85%;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  align-self: center;
+  opacity: 0;
+  margin-top: 7px;
+  margin-left: 7px;
+  background-color: cornflowerblue;
+  -webkit-tap-highlight-color: transparent;
+}
 
+.content-preparacion section div span {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  font-size: 85%;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  background-color: #252440; /* Ajustar el color de fondo */
+  color: white;
+  text-align: center; /* Centrar el texto */
+  padding: 10px; /* Ajustar el relleno */
+  opacity: 0; /* Ocultar inicialmente el span */
+  transition: opacity 0.5s ease; /* Añadir transición */
+}
 
+.content-preparacion section div:hover span {
+  opacity: 0.8;
+}
+
+.content-preparacion section div:hover a {
+  opacity: 1;
+}
+
+.content-preparacion section div:hover {
+  cursor: crosshair;
+  z-index: 1;
+  opacity: 1;
+  border-radius: 7px;
+  filter: contrast(120%);
+  transform: scale(1.65);
+  border: 2px solid #252440;
+}
 
 @media (max-width: 820px) {
   header {
     height: 80px;
   }
 
+  .content-preparacion section div a {
+    width: 35px;
+    height: 35px;
+    font-size: 100%;
+  }
+
+  .content-preparacion section div {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .content-preparacion section div:hover {
+    transform: scale(1.15);
+  }
+
   .evento_diploma_animado img {
     width: 100%;
+  }
+
+  .content-eventos h1 {
+    padding-top: 120px;
+  }
+
+  .content-eventos section {
+    margin-top: 60px;
   }
 
   .content-experiencia {
@@ -763,6 +933,14 @@ main {
 
   .linea_vertical_central {
     height: 85%;
+  }
+
+  .content-proyectos h1 {
+    padding-top: 120px;
+  }
+
+  .content-preparacion h1 {
+    padding-top: 120px;
   }
 
   .content-proyectos-cards {
@@ -817,6 +995,10 @@ main {
     transition: 500ms;
     box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
     align-items: start;
+  }
+
+  .menu_lateral a {
+    width: 83%;
   }
 
   .content-experiencia ul li img {
