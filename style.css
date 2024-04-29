@@ -286,6 +286,7 @@ header {
 .logo a img {
   width: 55px;
   display: flex;
+  border-radius: 50%;
 }
 
 .logo a img:active {
