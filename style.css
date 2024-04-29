@@ -270,25 +270,28 @@ header {
   color: white;
 }
 
-.logo a {
+.logo a img {
   color: white;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-.logo a {
-  color: white;
+.logo a img {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-  padding: 8px 16px;
-  margin-left: 10px;
+  padding: 4px 8px;
   transition: 300ms;
 }
 
-.logo a:active {
-  background: white;
+.logo a img {
+  width: 55px;
+  display: flex;
+}
+
+.logo a img:active {
+  background: gray;
   color: black;
-  border-radius: 99px;
+  border-radius: 50%;
 }
 
 .menu_lateral a {
