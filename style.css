@@ -567,6 +567,10 @@ main {
   background: #0077b5;
 }
 
+.link_circular_color_fondo {
+  background: #252440;
+}
+
 .link_circular_play_store {
   background: linear-gradient(#2196f5, #2196f5) top left,
     linear-gradient(#4cb050, #4cb050) top right,
@@ -876,7 +880,7 @@ main {
   opacity: 0;
   margin-top: 7px;
   margin-left: 7px;
-  background-color: cornflowerblue;
+  background-color: #252440;
   -webkit-tap-highlight-color: transparent;
 }
 
