@@ -435,14 +435,14 @@ main {
 
 .card .layer {
   width: 35vw;
-  height: 60vh;
+  height: 65vh;
   padding-inline: 1vw;
-  margin-top: -60vh;
+  margin-top: -65vh;
   position: relative;
   color: white;
   transition: 300ms;
   align-self: flex-end;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
 }
 
 .card .layer .info {
@@ -451,6 +451,7 @@ main {
   opacity: 0;
   bottom: 5vh;
   transition: 500ms;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 1490px) {
@@ -486,12 +487,12 @@ main {
 .info p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
-  margin-top: 1.5vh;
+  margin-top: 1vh;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
@@ -596,6 +597,7 @@ main {
 }
 
 .fondo_difuminado {
+  margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.4);
