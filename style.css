@@ -343,20 +343,16 @@ header {
   color: white;
 }
 
+.logo a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .logo a img {
   color: white;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.logo a img {
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
   padding: 4px 8px;
   transition: 300ms;
-}
-
-.logo a img {
   width: 55px;
   display: flex;
   border-radius: 50%;
@@ -366,6 +362,7 @@ header {
   background: gray;
   color: black;
   border-radius: 50%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu_lateral a {
@@ -1068,12 +1065,12 @@ footer {
 
   .card {
     width: 100%;
-    height: 100%;
+    height: 50vh;
   }
 
   .card:hover {
     width: 100%;
-    height: 75%;
+    height: 50vh;
   }
 
   .card .background {
@@ -1081,13 +1078,13 @@ footer {
   }
 
   .card .layer {
-    height: 100%;
+    width: 100%;
     padding-inline: 3vw;
   }
 
   .card .layer .info {
     opacity: 1;
-    width: 90%;
+    width: 72vw;
   }
 
   .info p {
