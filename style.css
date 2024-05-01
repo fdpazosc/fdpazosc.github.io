@@ -48,13 +48,39 @@ main {
 }
 
 .marte {
-  left: 30px;
-  top: 190vh
+  left: 50px;
+  top: 170vh
 }
 
 .saturno {
   left: 30px;
-  top: 230vh
+  top: 235vh
+}
+
+.mercurio {
+  left: 30px;
+  top: 350vh
+}
+
+.venus {
+  right: 50px;
+  top: 395vh
+}
+
+.urano {
+  right: 50px;
+  top: 475vh
+}
+
+.neptuno {
+  left: 50px;
+  top: 450vh
+}
+
+.luna {
+  height: 30vh;
+  right: 1vh;
+  bottom: 50vh;
 }
 
 .planeta_lado {
@@ -1073,6 +1099,12 @@ footer {
   
   .planeta_lado {
     width: 70%;
+  }
+
+  .luna {
+    height: 15vh;
+    right: 1vh;
+    bottom: 35vh;
   }
 
   .content-preparacion section div a {
