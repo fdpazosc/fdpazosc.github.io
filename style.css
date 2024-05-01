@@ -35,7 +35,7 @@ main {
 
 .fondo {
   opacity: 20%;
-  z-index: -2;
+  z-index: -20 !important;
 }
 
 .planeta {
@@ -511,7 +511,6 @@ main {
   height: 700px;
   display: flex;
   gap: 15px;
-  z-index: -100;
 }
 
 .card {
