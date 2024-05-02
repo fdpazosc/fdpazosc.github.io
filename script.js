@@ -17,7 +17,7 @@ document.addEventListener(
       var scrollbarStyle = document.createElement("style");
       scrollbarStyle.innerHTML = `
       ::-webkit-scrollbar-thumb {
-          background-color: #fff5; /* Cambia "#fff5" al color que desees */
+          background-color: white; /* Cambia "white" al color que desees */
       }`;
       document.body.appendChild(scrollbarStyle);
     }, 300);
@@ -43,6 +43,19 @@ document
   .getElementById("cuerpo_portafolio")
   .addEventListener("click", function (evt) {
     cerrarMenuLateralPorClick();
+  });
+
+
+  var cards = document.querySelectorAll('.card');
+
+  // Itera sobre la lista de elementos y agrega el evento de mouseover a cada uno
+  cards.forEach(function(card) {
+    card.addEventListener('mouseover', function() {
+      document.getElementsByClassName("fondo")[0].style.opacity = 0;
+    });
+    card.addEventListener('mouseout', function() {
+      document.getElementsByClassName("fondo")[0].style.opacity = 0.2;
+    });
   });
 
 document.getElementById("cabecera").addEventListener("click", function (evt) {

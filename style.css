@@ -6,11 +6,10 @@
 
 html {
   scroll-behavior: smooth;
-  background: radial-gradient(ellipse at bottom, black 0%, #252440 100%);
 }
 
 body {
-  /*background: #252440;*/
+  background: #252440;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -34,8 +33,12 @@ main {
 }
 
 .fondo {
-  opacity: 20%;
-  z-index: -20 !important;
+  background: radial-gradient(ellipse at bottom, black 0%, #252440 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: opacity 0.4s ease;
+  opacity: 0.2;
 }
 
 .planeta {
@@ -44,7 +47,7 @@ main {
 
 .jupiter {
   right: 0;
-  top: 110vh
+  top: 120vh
 }
 
 .marte {
@@ -54,12 +57,12 @@ main {
 
 .saturno {
   left: 30px;
-  top: 235vh
+  top: 245vh
 }
 
 .mercurio {
   left: 30px;
-  top: 350vh
+  top: 360vh
 }
 
 .venus {
@@ -69,18 +72,18 @@ main {
 
 .urano {
   right: 50px;
-  top: 475vh
+  top: 485vh
 }
 
 .neptuno {
   left: 50px;
-  top: 450vh
+  top: 470vh
 }
 
 .luna {
   height: 30vh;
-  right: 1vh;
-  bottom: 50vh;
+  right: 5vh;
+  bottom: 55vh;
 }
 
 .planeta_lado {
@@ -99,12 +102,13 @@ main {
 .estrellas {
   background-image: url(images/estrellas6.png);
   background-repeat: repeat;
+  background-size: 30%;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  opacity: 30%;
+  opacity: 50%;
   filter: blur(1px);
   z-index: -20;
 }
@@ -143,13 +147,13 @@ header {
 
 /* Estilos para el riel de la barra de desplazamiento */
 ::-webkit-scrollbar-track {
-  width: 0px;
-  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del riel */
+  width: 10px;
+  background-color:rgba(0, 0, 0, 0.5); /* Color de fondo del riel */
 }
 
 /* Estilos para el pulgar de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
-  background-color: #fff5; /* Color del pulgar */
+  background-color: white; /* Color del pulgar */
   border-radius: 6px; /* Radio de borde del pulgar */
   border: 3px solid transparent; /* Borde del pulgar */
   transition: background-color 0.3s ease-in-out; /* Transición de 0.3 segundos */
@@ -1074,6 +1078,7 @@ main {
 }
 
 footer {
+  margin-top: 100px;
   position: relative;
   overflow: hidden;
   font-size: 85%;
@@ -1099,6 +1104,10 @@ footer {
   
   .planeta_lado {
     width: 70%;
+  }
+
+  .estrellas{
+    background-size: 55%;
   }
 
   .luna {
@@ -1328,5 +1337,8 @@ footer {
 
   .separador-seccion-inicio {
     padding-top: 0vh;
+  }
+  footer {
+    margin-top: 0px;
   }
 }
