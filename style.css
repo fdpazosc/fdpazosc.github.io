@@ -16,11 +16,11 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  cursor: url('iconos/electric_guitar_n_rev.png'), auto;
+  cursor: url("iconos/electric_guitar_n_rev.png"), auto;
 }
 
 body:active {
-  cursor: url('iconos/electric_guitar_bw_rev.png'), auto;
+  cursor: url("iconos/electric_guitar_bw_rev.png"), auto;
 }
 
 main {
@@ -41,59 +41,99 @@ main {
   opacity: 0.2;
 }
 
+.eclipse {
+  background-image: linear-gradient(30deg, #13223f, #0e1a30);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  right: 70px;
+}
+
+.eclipse::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  animation: 20s ocultarEplipse forwards;
+}
+
+@keyframes ocultarEplipse {
+  0% {
+    transform: translate(-50px, 50px) scale(1);
+    box-shadow: 0 0 10px whitesmoke, 0 0 80px 8px white;;
+  }
+  50% {
+    transform: translate(0px, 0px) scale(1.03);
+    box-shadow: 0 0 25px whitesmoke, 0 0 150px 15px white;
+    background-color: white;
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1.02);
+    box-shadow: 0 0 10px whitesmoke, 0 0 80px 8px white;
+    background-color: white;
+  }
+}
+
 .planeta {
   position: absolute;
 }
 
 .jupiter {
   right: 0;
-  top: 120vh
+  top: 120vh;
 }
 
 .marte {
   left: 50px;
-  top: 185vh
+  top: 185vh;
 }
 
 .saturno {
   left: 30px;
-  top: 245vh
+  top: 245vh;
 }
 
 .mercurio {
   left: 30px;
-  top: 360vh
+  top: 360vh;
 }
 
 .venus {
   right: 50px;
-  top: 395vh
+  top: 395vh;
 }
 
 .urano {
   right: 50px;
-  top: 485vh
+  top: 485vh;
 }
 
 .neptuno {
   left: 50px;
-  top: 470vh
+  top: 470vh;
 }
 
 .luna {
-  height: 30vh;
+  height: 25vh;
   right: 5vh;
   bottom: 55vh;
 }
 
 .planeta_lado {
-  width: 35%;
+  width: 35vw;
   position: absolute;
   top: 0;
   z-index: -3;
 }
 
 .planeta_fondo {
+  z-index: -100;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -114,15 +154,15 @@ main {
 }
 
 a {
-  cursor: url('iconos/electric_guitar_n_rev.png'), auto !important;
+  cursor: url("iconos/electric_guitar_n_rev.png"), auto !important;
 }
 
 a:hover {
-  cursor: url('iconos/electric_guitar_s_rev.png'), auto !important;
+  cursor: url("iconos/electric_guitar_s_rev.png"), auto !important;
 }
 
 a:active {
-  cursor: url('iconos/electric_guitar_bw_rev.png'), auto !important;
+  cursor: url("iconos/electric_guitar_bw_rev.png"), auto !important;
 }
 
 header {
@@ -148,7 +188,7 @@ header {
 /* Estilos para el riel de la barra de desplazamiento */
 ::-webkit-scrollbar-track {
   width: 10px;
-  background-color:rgba(0, 0, 0, 0.5); /* Color de fondo del riel */
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del riel */
 }
 
 /* Estilos para el pulgar de la barra de desplazamiento */
@@ -161,13 +201,13 @@ header {
 
 /* Estilos cuando se pasa el mouse sobre la barra de desplazamiento */
 ::-webkit-scrollbar-thumb:hover {
-  cursor: url('iconos/electric_guitar_s_rev.png'), auto;
+  cursor: url("iconos/electric_guitar_s_rev.png"), auto;
   background-color: yellow; /* Color del pulgar al pasar el mouse */
 }
 
 /* Estilos para el pulgar de la barra de desplazamiento cuando se desplaza */
 ::-webkit-scrollbar-thumb:active {
-  cursor: url('iconos/electric_guitar_bw_rev.png'), auto;
+  cursor: url("iconos/electric_guitar_bw_rev.png"), auto;
   background-color: yellow; /* Color del pulgar al hacer clic */
 }
 
@@ -198,7 +238,7 @@ header {
   border-right: 4px solid;
   width: 20ch;
 
-  animation: tipeo 2s steps(20), parpadeo .5s infinite step-end alternate;
+  animation: tipeo 2s steps(20), parpadeo 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -224,31 +264,52 @@ header {
 
 @keyframes entradaLinksPresentacion {
   from {
-      opacity: 0;
-      
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes tipeo {
-  from { width: 0; }
+  from {
+    width: 0;
+  }
 }
 
 @keyframes parpadeo {
-  50% {border-color: transparent;}
+  50% {
+    border-color: transparent;
+  }
 }
 
-.content-presentacion div aside a:nth-child(1) { animation-delay: 0s; }
-.content-presentacion div aside a:nth-child(2) { animation-delay: 0.3s; }
-.content-presentacion div aside a:nth-child(3) { animation-delay: 0.6s; }
-.content-presentacion div aside a:nth-child(4) { animation-delay: 0.9s; }
-.content-presentacion div aside a:nth-child(5) { animation-delay: 1.2s; }
-.content-presentacion div aside a:nth-child(6) { animation-delay: 1.5s; }
-.content-presentacion div aside a:nth-child(7) { animation-delay: 1.8s; }
-.content-presentacion div aside a:nth-child(8) { animation-delay: 2.1s; }
-.content-presentacion div aside a:nth-child(9) { animation-delay: 2.4s; }
+.content-presentacion div aside a:nth-child(1) {
+  animation-delay: 0s;
+}
+.content-presentacion div aside a:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.content-presentacion div aside a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.content-presentacion div aside a:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.content-presentacion div aside a:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.content-presentacion div aside a:nth-child(6) {
+  animation-delay: 1.5s;
+}
+.content-presentacion div aside a:nth-child(7) {
+  animation-delay: 1.8s;
+}
+.content-presentacion div aside a:nth-child(8) {
+  animation-delay: 2.1s;
+}
+.content-presentacion div aside a:nth-child(9) {
+  animation-delay: 2.4s;
+}
 
 .linea_vertical_central {
   margin-top: 240px;
@@ -959,6 +1020,7 @@ main {
   justify-content: center;
   font-size: 25px;
   color: yellow;
+  background-color: #252440;
 }
 
 .content-preparacion h3 {
@@ -1078,12 +1140,12 @@ main {
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 500px;
   position: relative;
   overflow: hidden;
   font-size: 85%;
   font-style: oblique;
-  padding : 300px;
+  padding: 300px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1101,19 +1163,26 @@ footer {
   header {
     height: 80px;
   }
-  
+
+  .eclipse {
+    width: 100px;
+    height: 100px;
+    top: 85px;
+    right: 10px;
+  }
+
   .planeta_lado {
     width: 70%;
   }
 
-  .estrellas{
+  .estrellas {
     background-size: 55%;
   }
 
   .luna {
-    height: 15vh;
+    height: 10vh;
     right: 1vh;
-    bottom: 35vh;
+    bottom: 45vh;
   }
 
   .content-preparacion section div a {
