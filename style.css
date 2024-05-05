@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  background: #252440;
+  /*background: #252440;*/
+  background: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -33,16 +34,17 @@ main {
 }
 
 .fondo {
-  background: radial-gradient(ellipse at bottom, black 0%, #252440 100%);
+  background: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   transition: opacity 0.4s ease;
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .eclipse {
-  background-image: linear-gradient(30deg, #13223f, #0e1a30);
+  background-image: linear-gradient(30deg, black, black);
+  box-shadow: 0 0 1px black, 0 0 1px 1px black;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -60,13 +62,14 @@ main {
   width: 100%;
   border-radius: 50%;
   z-index: -1;
-  animation: 20s ocultarEplipse forwards;
+  filter: blur(2px);
+  animation: 15s ocultarEplipse forwards;
 }
 
 @keyframes ocultarEplipse {
   0% {
-    transform: translate(-50px, 50px) scale(1);
-    box-shadow: 0 0 10px whitesmoke, 0 0 80px 8px white;;
+    transform: translate(-30px, 30px) scale(1);
+    box-shadow: 0 0 10px whitesmoke, 0 0 80px 8px white;
   }
   50% {
     transform: translate(0px, 0px) scale(1.03);
@@ -82,6 +85,14 @@ main {
 
 .planeta {
   position: absolute;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+.bh {
+  right: 0;
+  top: 60vh;
+  opacity: 0.65;
 }
 
 .jupiter {
@@ -128,6 +139,8 @@ main {
 .planeta_lado {
   width: 35vw;
   position: absolute;
+  filter: brightness(0.5);
+  filter: blur(1px);
   top: 0;
   z-index: -3;
 }
@@ -148,7 +161,7 @@ main {
   top: 0;
   left: 0;
   position: absolute;
-  opacity: 50%;
+  opacity: 0.3;
   filter: blur(1px);
   z-index: -20;
 }
@@ -237,7 +250,6 @@ header {
   white-space: nowrap;
   border-right: 4px solid;
   width: 20ch;
-
   animation: tipeo 2s steps(20), parpadeo 0.5s infinite step-end alternate;
   overflow: hidden;
 }
@@ -312,6 +324,7 @@ header {
 }
 
 .linea_vertical_central {
+  content: '';
   margin-top: 240px;
   position: absolute;
   width: 2px;
@@ -529,7 +542,7 @@ header {
 }
 
 .menu_lateral a:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 0, 0.2);
 }
 
 .user-form-group a {
@@ -1020,7 +1033,7 @@ main {
   justify-content: center;
   font-size: 25px;
   color: yellow;
-  background-color: #252440;
+  /*background-color: #252440;*/
 }
 
 .content-preparacion h3 {
@@ -1164,6 +1177,11 @@ footer {
     height: 80px;
   }
 
+  .bh {
+    top: 75vh;
+    height: 25vw;
+  }
+
   .eclipse {
     width: 100px;
     height: 100px;
@@ -1275,7 +1293,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background: #252440;
+    background: black;
     height: 100vh;
     width: 50%;
     padding: 0 20px;

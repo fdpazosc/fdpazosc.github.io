@@ -54,7 +54,7 @@ document
       document.getElementsByClassName("fondo")[0].style.opacity = 0;
     });
     card.addEventListener('mouseout', function() {
-      document.getElementsByClassName("fondo")[0].style.opacity = 0.2;
+      document.getElementsByClassName("fondo")[0].style.opacity = 1;
     });
   });
 
