@@ -17,11 +17,11 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  cursor: url("images/startup5.png"), auto;
+  cursor: url("images/startup5.webp"), auto;
 }
 
 body:active {
-  cursor: url("images/startup2.png"), auto;
+  cursor: url("images/startup2.webp"), auto;
 }
 
 main {
@@ -173,7 +173,7 @@ main {
 }
 
 .estrellas {
-  background-image: url(images/estrellas10.png);
+  background-image: url(images/estrellas10.webp);
   background-repeat: repeat;
   background-size: 30%;
   width: 100%;
@@ -187,15 +187,15 @@ main {
 }
 
 a {
-  cursor: url("images/startup5.png"), auto !important;
+  cursor: url("images/startup5.webp"), auto !important;
 }
 
 a:hover {
-  cursor: url("images/startup3.png"), auto !important;
+  cursor: url("images/startup3.webp"), auto !important;
 }
 
 a:active {
-  cursor: url("images/startup2.png"), auto !important;
+  cursor: url("images/startup2.webp"), auto !important;
 }
 
 header {
@@ -233,13 +233,13 @@ header {
 
 /* Estilos cuando se pasa el mouse sobre la barra de desplazamiento */
 ::-webkit-scrollbar-thumb:hover {
-  cursor: url("images/startup5.png"), auto;
+  cursor: url("images/startup5.webp"), auto;
   background-color: yellow; /* Color del pulgar al pasar el mouse */
 }
 
 /* Estilos para el pulgar de la barra de desplazamiento cuando se desplaza */
 ::-webkit-scrollbar-thumb:active {
-  cursor: url("images/startup3.png"), auto;
+  cursor: url("images/startup3.webp"), auto;
   background-color: yellow; /* Color del pulgar al hacer clic */
 }
 
