@@ -257,8 +257,8 @@ header {
   font-family: monospace;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 20ch;
-  animation: tipeo 1s steps(20), parpadeo 0.35s infinite step-end alternate;
+  width: 22ch;
+  animation: tipeo 1s steps(22), parpadeo 0.35s infinite step-end alternate;
   overflow: hidden;
 }
 
