@@ -17,11 +17,11 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  cursor: url("iconos/electric_guitar_n_rev.png"), auto;
+  cursor: url("images/startup5.png"), auto;
 }
 
 body:active {
-  cursor: url("iconos/electric_guitar_bw_rev.png"), auto;
+  cursor: url("images/startup2.png"), auto;
 }
 
 main {
@@ -63,19 +63,19 @@ main {
   border-radius: 50%;
   z-index: -1;
   filter: blur(2px);
-  animation: 15s ocultarEplipse forwards;
+  animation: 7.5s ocultarEclipse forwards;
 }
 
-@keyframes ocultarEplipse {
+@keyframes ocultarEclipse {
   0% {
     transform: translate(-30px, 30px) scale(1);
-    box-shadow: 0 0 10px whitesmoke, 0 0 80px 8px white;
-  }
-  50% {
-    transform: translate(0px, 0px) scale(1.03);
     box-shadow: 0 0 25px whitesmoke, 0 0 150px 15px white;
-    background-color: white;
   }
+  /*50% {
+    transform: translate(0px, 0px) scale(1.03);
+    box-shadow: 0 0 15px whitesmoke, 0 0 120px 12px white;
+    background-color: white;
+  }*/
   100% {
     box-shadow: 0 0 10px whitesmoke, 0 0 50px 5px white;
     background-color: white;
@@ -142,7 +142,7 @@ main {
   left: -10%;
   z-index: -3;
   transform: rotate(120deg);
-  animation: planetaOscuro 15s forwards;
+  animation: planetaOscuro 7.5s forwards;
 }
 
 @keyframes planetaOscuro {
@@ -176,15 +176,15 @@ main {
 }
 
 a {
-  cursor: url("iconos/electric_guitar_n_rev.png"), auto !important;
+  cursor: url("images/startup5.png"), auto !important;
 }
 
 a:hover {
-  cursor: url("iconos/electric_guitar_s_rev.png"), auto !important;
+  cursor: url("images/startup3.png"), auto !important;
 }
 
 a:active {
-  cursor: url("iconos/electric_guitar_bw_rev.png"), auto !important;
+  cursor: url("images/startup2.png"), auto !important;
 }
 
 header {
@@ -193,7 +193,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: left;
   background: rgba(50, 50, 50, 0.5);
   height: 100px;
   z-index: 110;
@@ -222,13 +222,13 @@ header {
 
 /* Estilos cuando se pasa el mouse sobre la barra de desplazamiento */
 ::-webkit-scrollbar-thumb:hover {
-  cursor: url("iconos/electric_guitar_s_rev.png"), auto;
+  cursor: url("images/startup5.png"), auto;
   background-color: yellow; /* Color del pulgar al pasar el mouse */
 }
 
 /* Estilos para el pulgar de la barra de desplazamiento cuando se desplaza */
 ::-webkit-scrollbar-thumb:active {
-  cursor: url("iconos/electric_guitar_bw_rev.png"), auto;
+  cursor: url("images/startup3.png"), auto;
   background-color: yellow; /* Color del pulgar al hacer clic */
 }
 
@@ -372,6 +372,7 @@ box-shadow: 100px white;
 }
 
 .content-presentacion {
+  position: relative;
   width: 100%;
   color: white;
   display: flex;
@@ -379,6 +380,7 @@ box-shadow: 100px white;
   align-items: center;
   justify-content: center;
   padding-top: 35vh;
+  z-index: 10 !important;
 }
 
 .content-sobre-mi {
@@ -431,7 +433,7 @@ box-shadow: 100px white;
 .content-presentacion aside a {
   text-decoration: none;
   overflow: hidden;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 0 0 1px white, 0 0 1px 1px white;
   font-size: 35px;
   width: 45px;
   height: 45px;
@@ -443,6 +445,12 @@ box-shadow: 100px white;
   border-radius: 50%;
   display: flex;
   flex-direction: row;
+  border: 0 0 3px 3px white;
+}
+
+
+.content-presentacion aside a:hover {
+  box-shadow: 0 0 5px white, 0 0 5px 5px white;
 }
 
 .content-presentacion div h1 {
@@ -545,17 +553,11 @@ box-shadow: 100px white;
 }
 
 .menu_lateral {
-  width: 55%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-.menu_lateral {
-  width: 55%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+  margin-left: 100px;
 }
 
 .menu_lateral a {
@@ -580,8 +582,73 @@ box-shadow: 100px white;
 }
 
 .user-form-group {
+  width: 200px;
+  margin-right: 100px;
   -webkit-tap-highlight-color: transparent;
 }
+
+@media (max-width: 1669px) {
+  .user-form-group {
+    width: 210px;
+  }
+}
+
+@media (max-width: 1596px) {
+  .user-form-group {
+    width: 220px;
+  }
+}
+
+@media (max-width: 1385px) {
+  .user-form-group {
+    width: 230px;
+  }
+}
+
+@media (max-width: 1236px) {
+  .user-form-group {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .user-form-group {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1039px) {
+  .user-form-group {
+    width: 260px;
+  }
+}
+
+@media (max-width: 971px) {
+  .user-form-group {
+    width: 270px;
+  }
+}
+
+@media (max-width: 916px) {
+  .user-form-group {
+    width: 280px;
+  }
+}
+
+@media (max-width: 870px) {
+  .user-form-group {
+    width: 290px;
+  }
+}
+
+@media (max-width: 831px) {
+  .user-form-group {
+    width: 300px;
+  }
+}
+
+
+
 
 .contactame {
   border: rgba(255, 255, 255, 0.5) 2px solid;
@@ -1204,6 +1271,21 @@ footer {
     height: 25vw;
   }
 
+  .content-eventos h1 {
+    padding-top: 10px;
+  }
+
+  .user-form-group label {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .curriculum {
+    margin-right: 20px;
+    width: 130px;
+    max-width: 130px;
+    min-width: 130px;
+  }
+
   .eclipse {
     width: 100px;
     height: 100px;
@@ -1349,8 +1431,11 @@ footer {
   }
 
   .user-form-group {
+    width: 100%;
+    justify-content: end;
+    margin-right: 10px;
     display: flex;
-    align-items: center;
+    align-items: end;
   }
 
   .contactame {
@@ -1387,6 +1472,7 @@ footer {
 
   #check_menu_lateral:checked ~ .menu_lateral {
     left: 0%;
+    margin-left: 0px;
   }
 
   .user-form-group label {
@@ -1425,6 +1511,7 @@ footer {
     width: 100%;
     gap: 5vh;
     padding-top: 15vh;
+    padding-bottom: 0vh;
   }
 
   .content-sobre-mi div p {
