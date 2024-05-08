@@ -98,9 +98,23 @@ main article {
 }
 
 .planeta {
+  view-timeline-name: --planeta;
+  view-timeline-axis: block;
+  animation-timeline: --planeta;
+  animation-name: mostrarElementoScroll1;
+  animation-range: entry 0% cover 40%;
   position: absolute;
   filter: brightness(0.5);
   z-index: -1;
+}
+
+@keyframes mostrarElementoScroll1 {
+  from {
+    scale: 25%;
+  }
+  to {
+    scale: 100%;
+  }
 }
 
 .bh {
@@ -121,7 +135,7 @@ main article {
 
 .saturno {
   left: 30px;
-  top: 260vh;
+  top: 230vh;
 }
 
 .mercurio {
@@ -389,7 +403,7 @@ header {
   width: 2px;
   height: 85%;
   background: #fff5;
-  margin-top: 210px;
+  margin-top: 190px;
 }
 
 .marcador_separador_experiencia {
@@ -430,7 +444,6 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-bottom: 25vh;
   padding-top: 25vh;
 }
 
@@ -995,7 +1008,7 @@ main {
 }
 
 .content-eventos {
-  margin-top: 10vh;
+  margin-top: 0vh;
 }
 
 .content-eventos h1 {
@@ -1498,12 +1511,12 @@ footer {
   }
 
   .content-sobre-mi {
-    margin-top: 15.5vh;
+    margin-top: 4.5vh;
     flex-direction: column;
     width: 100%;
     gap: 5vh;
-    padding-top: 4.5vh;
     padding-bottom: 0vh;
+    padding-top: 4.5vh;
   }
 
   .content-sobre-mi div p {
