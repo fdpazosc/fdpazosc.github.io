@@ -1,1053 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio - David Pazos: Desarrollador Web y Mobile</title>
-    <meta name="description" content="Breve descripción de tu página aquí" />
-    <link rel="icon" type="image/x-icon" href="/images/id-card-solid-240.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="manifest" href="/manifest.json">
-    <meta name="robots" content="index,follow" />
-    <meta name="theme-color" content="#000000">
-  </head>
-  <body>
-    <header id="cabecera">
-      <input
-        type="checkbox"
-        name="check_menu_lateral"
-        id="check_menu_lateral"
-      />
-      <!--<h1 class="logo">
-      <a href="#"><img src="iconos/Logo_DP_off.png" alt="PDave" /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - David Pazos: Desarrollador Web y Mobile</title>
+  <meta name="description" content="Breve descripción de tu página aquí" />
+  <link rel="icon" type="image/x-icon" href="/images/id-card-solid-240.webp" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+  <header id="cabecera">
+    <input type="checkbox" name="check_menu_lateral" id="check_menu_lateral" />
+    <!--<h1 class="logo">
+      <a href="#"><img src="iconos/Logo_DP_off.webp" alt="PDave" /></a>
     </h1>-->
-      <nav class="menu_lateral">
-        <h1 class="logo">PDave.dev</h1>
-        <div class="divider"></div>
-        <a href="#">Presentación</a>
-        <a href="#titulo_experiencia">Experiencia</a>
-        <a href="#titulo_proyectos">Proyectos</a>
-        <a href="#titulo_sobre_mi">Sobre mí</a>
-        <a href="#titulo_eventos">Eventos</a>
-        <a href="#titulo_preparacion">Preparación</a>
-      </nav>
-      <div class="user-form-group">
-        <label for="check_menu_lateral">
-          <i class="bx bx-menu menu" id="boton_abrir"></i>
-          <!--<i class="bx bx-x close-menu" id="boton_cerrar"></i>-->
-          <i class="close-menu" id="boton_cerrar"></i>
-        </label>
-        <a
-          class="curriculum"
-          href="documentos/Curriculum_Vitae_DP_Estilo_Developer.pdf"
-          target="_blank"
-        >
-          <i class="bx bxs-user-badge"></i> Curriculum
-        </a>
-      </div>
-    </header>
-    <div class="fondo">
-      <div class="estrellas"></div>
-      <div class="eclipse"></div>
-      <img
-        src="images/exoplaneta4.webp"
-        alt="Planeta Lateral"
-        class="planeta_lado"
-      />
-      <img
-        src="images/jupiter.webp"
-        alt="Jupiter"
-        class="planeta jupiter"
-        height="400"
-      />
-      <img
-        src="images/marte2.webp"
-        alt="Marte"
-        class="planeta marte"
-        height="150"
-      />
-      <img
-        src="images/saturno.webp"
-        alt="Saturno"
-        class="planeta saturno"
-        height="300"
-      />
-      <img
-        src="images/mercurio.webp"
-        alt="Mercurio"
-        class="planeta mercurio"
-        height="150"
-      />
-      <img
-        src="images/venus2.webp"
-        alt="Venus"
-        class="planeta venus"
-        height="250"
-      />
-      <img
-        src="images/urano.webp"
-        alt="Urano"
-        class="planeta urano"
-        height="400"
-      />
-      <img
-        src="images/neptuno.webp"
-        alt="neptuno"
-        class="planeta neptuno"
-        height="250"
-      />
-      <img src="images/luna.webp" alt="Luna" class="planeta luna" />
+    <nav class="menu_lateral">
+      <h1 class="logo">PDave.dev</h1>
+      <div class="divider"></div>
+      <a href="#">Presentación</a>
+      <a href="#titulo_experiencia">Experiencia</a>
+      <a href="#titulo_proyectos">Proyectos</a>
+      <a href="#titulo_sobre_mi">Sobre mí</a>
+      <a href="#titulo_eventos">Eventos</a>
+      <a href="#titulo_preparacion">Preparación</a>
+    </nav>
+    <div class="user-form-group">
+      <label for="check_menu_lateral">
+        <i class="bx bx-menu menu" id="boton_abrir"></i>
+        <!--<i class="bx bx-x close-menu" id="boton_cerrar"></i>-->
+        <i class="close-menu" id="boton_cerrar"></i>
+      </label>
     </div>
-    <img
-      src="images/tierraamanecer.webp"
-      alt="Tierra Amaneciendo"
-      class="planeta_fondo"
-    />
-    <main id="cuerpo_portafolio">
-      <article>
-        <section class="content-presentacion">
+  </header>
+  <div class="fondo">
+    <div class="estrellas"></div>
+    <div class="eclipse"></div>
+    <img src="images/exoplaneta4.webp" alt="Planeta Lateral" class="planeta_lado" />
+    <img src="images/jupiter.webp" alt="Jupiter" class="planeta jupiter" height="400" />
+    <img src="images/marte2.webp" alt="Marte" class="planeta marte" height="150" />
+    <img src="images/saturno.webp" alt="Saturno" class="planeta saturno" height="300" />
+    <img src="images/mercurio.webp" alt="Mercurio" class="planeta mercurio" height="150" />
+    <img src="images/venus2.webp" alt="Venus" class="planeta venus" height="250" />
+    <img src="images/urano.webp" alt="Urano" class="planeta urano" height="400" />
+    <img src="images/neptuno.webp" alt="neptuno" class="planeta neptuno" height="250" />
+    <img src="images/luna.webp" alt="Luna" class="planeta luna" />
+  </div>
+  <img src="images/tierraamanecer.webp" alt="Tierra Amaneciendo" class="planeta_fondo" />
+  <main id="cuerpo_portafolio">
+    <article>
+      <section class="content-presentacion">
+        <aside>
+          <img src="images/Foto_de_perfil_sin_fondo.webp" alt="Foto de Perfil" />
+        </aside>
+        <div>
+          <h1 id="titulo_home">
+            <span>¡Hey, soy David Pazos!</span>
+          </h1>
+          <p>
+            +9 años de experiencia.
+            <strong>Desarrollador y gestor de Software</strong> de Quito -
+            Ecuador
+            <img class="emoji_p" src="images/bandera_ecuador.webp" alt="🇪🇨" />.
+            Especializado en el desarrollo de aplicaciones únicas tanto para
+            la web como para dispositivos móviles.
+          </p>
           <aside>
-            <img
-              src="images/Foto-de-perfil-con-fondo.webp"
-              alt="Foto de Perfil"
-            />
+            <a target="_blank" href="https://github.com/fdpazosc" class="link_circular_negro"><i
+                class="bx bxl-github"></i><span class="escondido">GitHub</span></a>
+            <a target="_blank" href="https://www.linkedin.com/in/fernando-david-pazos-castillo-7a326889/"
+              class="link_circular_linkedin"><i class="bx bxl-linkedin"></i><span class="escondido">LinkedIn</span></a>
+            <a target="_blank" href="mailto:fernandodavidpazos@gmail.com" class="link_circular_gmail"><i
+                class="bx bxl-gmail"></i><span class="escondido">Gmail</span></a>
+            <a target="_blank" href="https://wa.me/+593983514566" class="link_circular_verde"><i
+                class="bx bxl-whatsapp"></i><span class="escondido">WhatsApp</span></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCO6MCBLC4i-nau7zMPSrKIQ"
+              class="link_circular_gmail"><i class="bx bxl-youtube"></i><span class="escondido">YouTube</span></a>
+            <a target="_blank" href="https://www.facebook.com/fdpazos1/" class="link_circular_azul"><i
+                class="bx bxl-facebook"></i><span class="escondido">Facebook</span></a>
+            <a target="_blank" href="https://www.instagram.com/pazosd/" class="link_circular_instagram"><i
+                class="bx bxl-instagram"></i><span class="escondido">Instagram</span></a>
+            <a target="_blank" href="https://twitter.com/davidpazos2" class="link_circular_celeste"><i
+                class="bx bxl-twitter"></i><span class="escondido">Twitter</span></a>
+            <a target="_blank" href="https://www.tiktok.com/@davidpazos6" class="link_circular_negro"><i
+                class="bx bxl-tiktok"></i><span class="escondido">TikTok</span></a>
+            <a class="curriculum" href="documentos/Curriculum_Vitae_DP_Estilo_Developer.pdf" target="_blank">
+              <i class="bx bxs-user-badge"></i> Curriculum
+            </a>
           </aside>
-          <div>
-            <h1 id="titulo_home">
-              <span>¡Hey, soy David Pazos!</span>
-            </h1>
-            <p>
-              +9 años de experiencia.
-              <strong>Desarrollador y gestor de Software</strong> de Quito -
-              Ecuador
-              <img class="emoji_p" src="images/bandera_ecuador.webp" alt="🇪🇨" />.
-              Especializado en el desarrollo de aplicaciones únicas tanto para
-              la web como para dispositivos móviles.
-            </p>
+        </div>
+      </section>
+    </article>
+    <article>
+      <section class="content-experiencia" id="titulo_experiencia">
+        <h1><i class="bx bxs-briefcase"></i> Experiencia</h1>
+        <div class="linea_vertical_central"></div>
+        <ul>
+          <li>
+            <div>
+              <span>
+                Pasante
+                <span class="marcador_separador_experiencia">
+                  <div>&nbsp;</div>
+                  <br />
+                </span>
+              </span>
+              <span class="texto-blanco">2014-2015</span>
+            </div>
+            <div>
+              <span class="texto-amarillo">Oleoducto de crudos pesados (OCP)</span>
+              <br />
+              Pasante en helpdesk, ademas de dar soporte y mantenimiento de equipos
+              <br /><br />
+              <img src="images/opc.webp" alt="OCP" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <span>
+                Programador
+                <span class="marcador_separador_experiencia">
+                  <div>&nbsp;</div>
+                  <br />
+                </span>
+              </span>
+              <span class="texto-blanco">2015-2020</span>
+            </div>
+            <div>
+              <span class="texto-amarillo">Pontificia Universidad Católica del Ecuador (PUCE)</span>
+              <br />
+              Desarrollando proyectos como PUCEAPP e Intranet y el primer sistema de convocatorias docentes de la
+              Universidad.
+              <br /><br />
+              <img src="images/puce.webp" alt="PUCE" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <span>
+                <label class="texto-alineado-izquierda">Gestor informático</label>
+                <span class="marcador_separador_experiencia">
+                  <div>&nbsp;</div>
+                  <br />
+                </span>
+              </span>
+              <span class="texto-blanco">2020-Actualidad</span>
+            </div>
+            <div>
+              <span class="texto-amarillo">Pontificia Universidad Católica del Ecuador (PUCE)</span>
+              <br />
+              Encargado de gestionar proyectos como PUCEAPP v3.0, Sistema de Trámites y Sistema de Reservas de la Universidad.
+              <br /><br />
+              <img src="images/puce.webp" alt="PUCE" />
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article>
+      <section class="content-proyectos">
+        <div>
+          <h1 id="titulo_proyectos">
+            <i class="bx bx-code-alt"></i> Proyectos
+          </h1>
+        </div>
+        <section class="content-proyectos-cards">
+          <div class="card">
             <aside>
-              <a
-                target="_blank"
-                href="https://github.com/fdpazosc"
-                class="link_circular_negro"
-                ><i class="bx bxl-github"></i
-              ><span class="escondido">GitHub</span></a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/fernando-david-pazos-castillo-7a326889/"
-                class="link_circular_linkedin"
-                ><i class="bx bxl-linkedin"></i
-              ><span class="escondido">LinkedIn</span></a>
-              <a
-                target="_blank"
-                href="mailto:fernandodavidpazos@gmail.com"
-                class="link_circular_gmail"
-                ><i class="bx bxl-gmail"></i
-              ><span class="escondido">Gmail</span></a>
-              <a
-                target="_blank"
-                href="https://wa.me/+593983514566"
-                class="link_circular_verde"
-                ><i class="bx bxl-whatsapp"></i
-              ><span class="escondido">WhatsApp</span></a>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCO6MCBLC4i-nau7zMPSrKIQ"
-                class="link_circular_gmail"
-                ><i class="bx bxl-youtube"></i
-              ><span class="escondido">YouTube</span></a>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/fdpazos1/"
-                class="link_circular_azul"
-                ><i class="bx bxl-facebook"></i
-              ><span class="escondido">Facebook</span></a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/pazosd/"
-                class="link_circular_instagram"
-                ><i class="bx bxl-instagram"></i
-              ><span class="escondido">Instagram</span></a>
-              <a
-                target="_blank"
-                href="https://twitter.com/davidpazos2"
-                class="link_circular_celeste"
-                ><i class="bx bxl-twitter"></i
-              ><span class="escondido">Twitter</span></a>
-              <a
-                target="_blank"
-                href="https://www.tiktok.com/@davidpazos6"
-                class="link_circular_negro"
-                ><i class="bx bxl-tiktok"></i
-              ><span class="escondido">TikTok</span></a>
+              <a href="https://play.google.com/store/apps/details?id=com.puce.fpazos390.herbariopuce&hl=es&rdid=com.puce.fpazos390.herbariopuce"
+                class="link_circular_play_store" target="_blank"><i class="bx bxl-play-store"></i><span
+                  class="escondido">Play Store</span></a>
+              <a href="https://apps.apple.com/us/app/floramed/id1185887287" class="link_circular_appstore"
+                target="_blank"><i class="bx bxl-apple"></i><span class="escondido">Apple Store</span></a>
+              <a href="https://www.edicionmedica.ec/secciones/salud-publica/floramed-la-primera-app-sobre-plantas-medicinales-del-ecuador-90174"
+                class="link_circular_negro" target="_blank"><i class="bx bxs-news"></i><span class="escondido">Edicion
+                  Médica</span></a>
             </aside>
+            <img src="datos_proyectos/floramed2.webp" alt="Promocional Proyecto Floramed" class="background" />
+            <img src="datos_proyectos/floramed_proy.webp" alt="Proyecto Floramed" class="proyecto" />
+            <div class="layer">
+              <div class="info">
+                <h1>Floramed</h1>
+                <p>
+                  La PUCE lanzó Floramed, la primera app de plantas
+                  medicinales de Ecuador, desarrollada por el Herbario QCA.
+                  Ofrece datos de 30 especies y es producto de una
+                  colaboración entre instituciones académicas.
+                </p>
+                <div class="fondo_difuminado">
+                  <img src="iconos/android_icon.webp" alt="Android" />
+                  <img src="iconos/java_icon.webp" alt="Java" />
+                  <img src="iconos/php_icon.webp" alt="PHP" />
+                  <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
+                  <img src="iconos/mysql_icon.webp" alt="MySQL" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <aside>
+              <a href="https://play.google.com/store/apps/details?id=ec.edu.puce.dipuceapp&hl=es_EC&gl=US"
+                class="link_circular_play_store" target="_blank"><i class="bx bxl-play-store"></i><span
+                  class="escondido">Play Store</span></a>
+              <a href="https://apps.apple.com/ec/app/puce-app/id1637743052" class="link_circular_appstore"
+                target="_blank"><i class="bx bxl-apple"></i><span class="escondido">Apple Store</span></a>
+              <a href="https://www.canva.com/design/DAFqaFpAE-s/watch" class="link_circular_negro" target="_blank"><i
+                  class="bx bx-video"></i><span class="escondido">Canva</span></a>
+            </aside>
+            <img src="datos_proyectos/puceapp_fondo.webp" alt="Promocional PUCEAPP" class="background" />
+            <img src="datos_proyectos/puceapp_proy.webp" alt="Proyecto PUCEAPP" class="proyecto" />
+            <section class="layer">
+              <div class="info">
+                <h1>PUCEAPP</h1>
+                <p>
+                  PUCEAPP mejora la experiencia universitaria con reservas de
+                  espacios y servicios específicos para estudiantes, docentes
+                  y administrativos, además de ofrecer un carnet digital con
+                  código QR para acceso al campus.
+                </p>
+                <div class="fondo_difuminado">
+                  <img src="iconos/android_icon.webp" alt="Android" />
+                  <img src="iconos/kotlin_icon.webp" alt="Kotlin" />
+                  <img src="iconos/php_icon.webp" alt="PHP" />
+                  <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
+                  <img src="iconos/mysql_icon.webp" alt="MySQL" />
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="card">
+            <aside>
+              <a href="https://www.puce.edu.ec/intranet" class="link_circular_linkedin" target="_blank"><i
+                  class="bx bx-link-alt"></i><span class="escondido">Intranet PUCE</span></a>
+            </aside>
+            <img src="datos_proyectos/intranet_puce.webp" alt="Promocional Intranet PUCE" class="background" />
+            <img src="datos_proyectos/intranet_puce_1.webp" alt="Proyecto Intranet PUCE" class="proyecto" />
+            <div class="layer">
+              <div class="info">
+                <h1>Intranet PUCE</h1>
+                <p>
+                  Intranet interna de la PUCE que cuenta von varios accesos y
+                  servicios internos de la PUCE que ayudan en la gestión de
+                  varios de los procesos y datos que utilizan administrativos,
+                  docentes y estudiantes.
+                </p>
+                <div class="fondo_difuminado">
+                  <img src="iconos/php_icon.webp" alt="PHP" />
+                  <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
+                  <img src="iconos/mysql_icon.webp" alt="MySQL" />
+                  <img src="iconos/javascript_icon.webp" alt="JavaScript" />
+                  <img src="iconos/jquery_icon.webp" alt="JQuery" />
+                  <img src="iconos/bootstrap_icon.webp" alt="Bootstrap" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <aside>
+              <a href="https://puceapps.puce.edu.ec/reservas" class="link_circular_linkedin" target="_blank"><i
+                  class="bx bx-link-alt"></i><span class="escondido">Resérvalo PUCE</span></a>
+            </aside>
+            <img src="datos_proyectos/reservalo_puce.webp" alt="Promocional Reservalo PUCE" class="background" />
+            <img src="datos_proyectos/reservalo_proy.webp" alt="Proyecto Reservalo PUCE" class="proyecto" />
+            <div class="layer">
+              <div class="info">
+                <h1>Resérvalo</h1>
+                <p>
+                  Sistema de reserva de espacios físicos dentro de la
+                  universidad, este aplicativo permite que según los perfiles
+                  y permisos del usuario, este pueda realizar una reserva de
+                  un espacio físico dentro del campus de la univiersidad.
+                </p>
+                <div class="fondo_difuminado">
+                  <img src="iconos/php_icon.webp" alt="PHP" />
+                  <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
+                  <img src="iconos/sqlserver_icon.webp" alt="MS. SQL Server" />
+                  <img src="iconos/javascript_icon.webp" alt="JavaScript" />
+                  <img src="iconos/extjs_icon.svg" alt="Sencha ExtJS" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <aside>
+              <a href="https://www.puce.edu.ec/adn-puce/unete-a-nuestro-equipo/" class="link_circular_linkedin"
+                target="_blank"><i class="bx bx-link-alt"></i><span class="escondido">Únete a Nuestro Equipo
+                  PUCE</span></a>
+            </aside>
+            <img src="datos_proyectos/unete_a_nuestro_equipo_puce.webp" alt="Promocional Unete a Nuestro Equipo PUCE"
+              class="background" />
+            <img src="datos_proyectos/unete_proy.webp" alt="Proyecto Unete a Nuestro Equipo PUCE" class="proyecto" />
+            <div class="layer">
+              <div class="info">
+                <h1>Únete a Nuestro Equipo PUCE</h1>
+                <p>
+                  Aplicativo para mostrar todas las nuevas ofertas de trabajo
+                  que se abren dentro de la universidad con los respectivos
+                  accesos a la plataforma de reclutamiento de la universidad.
+                </p>
+                <div class="fondo_difuminado">
+                  <img src="iconos/php_icon.webp" alt="PHP" />
+                  <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
+                  <img src="iconos/mysql_icon.webp" alt="MySQL" />
+                  <img src="iconos/javascript_icon.webp" alt="JavaScript" />
+                  <img src="iconos/jquery_icon.webp" alt="JQuery" />
+                  <img src="iconos/wordpress_icon.webp" alt="WordPress" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <aside>
+              <a href="https://www.puce.edu.ec/adn-puce/unete-a-nuestro-equipo/" class="link_circular_linkedin"
+                target="_blank"><i class="bx bx-link-alt"></i><span class="escondido">Únete a Nuestro Equipo</span></a>
+              <a href="https://www.youtube.com/watch?v=pKQZ-QSDcbE" class="link_circular_gmail" target="_blank"><i
+                  class="bx bxl-youtube"></i><span class="escondido">YouTube</span></a>
+            </aside>
+            <img src="datos_proyectos/RODI_IDLE.gif" alt="Promocional RODI" class="background" />
+            <img src="datos_proyectos/RODI_PROY.webp" alt="Proyecto RODI" class="proyecto" />
+            <div class="layer">
+              <div class="info">
+                <h1>RODI</h1>
+                <p>
+                  Mascota de la dirección de informática de la PUCE, que se
+                  utiliza como forma de interactividad con la comunidad
+                  univeritaria a forma de realidad aumentada y holograma.
+                </p>
+                <div class="fondo_difuminado">
+                  <img src="iconos/php_icon.webp" alt="PHP" />
+                  <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
+                  <img src="iconos/unity_icon.webp" alt="Unity 3D" />
+                  <img src="iconos/blender_icon.webp" alt="Blender" />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-      </article>
-      <article>
-        <section class="content-experiencia" id="titulo_experiencia">
-          <h1><i class="bx bxs-briefcase"></i> Experiencia</h1>
-          <div class="linea_vertical_central"></div>
-          <ul>
-            <li></li>
-            <li>
-              <div>
-                <span>
-                  Pasante
-                  <span class="marcador_separador_experiencia">
-                    <div>&nbsp;</div>
-                    <br />
-                  </span>
-                </span>
-                <span class="texto-blanco">2014-2015</span>
-              </div>
-              <div>
-                Oleoducto de crudos pesados (OCP)
-                <br />
-                Pasante en helpdesk y soporte de equipos
-                <br /><br />
-                <img src="images/opc.webp" alt="OCP" />
-              </div>
-            </li>
-            <li>
-              <div>
-                <span>
-                  Programador
-                  <span class="marcador_separador_experiencia">
-                    <div>&nbsp;</div>
-                    <br />
-                  </span>
-                </span>
-                <span class="texto-blanco">2015-2020</span>
-              </div>
-              <div>
-                Pontificia Universidad Católica del Ecuador (PUCE)
-                <br />
-                Desarrollador de Software para PUCE
-                <br /><br />
-                <img src="images/puce.webp" alt="PUCE" />
-              </div>
-            </li>
-            <li>
-              <div>
-                <span>
-                  <label class="texto-alineado-izquierda"
-                    >Gestor informático</label
-                  >
-                  <span class="marcador_separador_experiencia">
-                    <div>&nbsp;</div>
-                    <br />
-                  </span>
-                </span>
-                <span class="texto-blanco">2020-Actualidad</span>
-              </div>
-              <div>
-                Pontificia Universidad Católica del Ecuador (PUCE)
-                <br />
-                Encargado de gestionar proyectos de desarrollo de software en
-                PUCE
-                <br /><br />
-                <img src="images/puce.webp" alt="PUCE" />
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-      <article>
-        <section class="content-proyectos">
-          <div>
-            <h1 id="titulo_proyectos">
-              <i class="bx bx-code-alt"></i> Proyectos
-            </h1>
-          </div>
-          <section class="content-proyectos-cards">
-            <div class="card">
-              <aside>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.puce.fpazos390.herbariopuce&hl=es&rdid=com.puce.fpazos390.herbariopuce"
-                  class="link_circular_play_store"
-                  target="_blank"
-                  ><i class="bx bxl-play-store"></i
-                ><span class="escondido">Play Store</span></a>
-                <a
-                  href="https://apps.apple.com/us/app/floramed/id1185887287"
-                  class="link_circular_appstore"
-                  target="_blank"
-                  ><i class="bx bxl-apple"></i
-                ><span class="escondido">Apple Store</span></a>
-                <a
-                  href="https://www.edicionmedica.ec/secciones/salud-publica/floramed-la-primera-app-sobre-plantas-medicinales-del-ecuador-90174"
-                  class="link_circular_negro"
-                  target="_blank"
-                  ><i class="bx bxs-news"></i
-                ><span class="escondido">Edicion Médica</span></a>
-              </aside>
-              <img
-                src="datos_proyectos/floramed2.png"
-                alt="Promocional Proyecto Floramed"
-                class="background"
-              />
-              <img
-                src="datos_proyectos/floramed_proy.png"
-                alt="Proyecto Floramed"
-                class="proyecto"
-              />
-              <div class="layer">
-                <div class="info">
-                  <h1>Floramed</h1>
-                  <p>
-                    La PUCE lanzó Floramed, la primera app de plantas
-                    medicinales de Ecuador, desarrollada por el Herbario QCA.
-                    Ofrece datos de 30 especies y es producto de una
-                    colaboración entre instituciones académicas.
-                  </p>
-                  <div class="fondo_difuminado">
-                    <img src="iconos/android_icon.png" alt="Android" />
-                    <img src="iconos/java_icon.webp" alt="Java" />
-                    <img src="iconos/php_icon.png" alt="PHP" />
-                    <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
-                    <img src="iconos/mysql_icon.png" alt="MySQL" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <aside>
-                <a
-                  href="https://play.google.com/store/apps/details?id=ec.edu.puce.dipuceapp&hl=es_EC&gl=US"
-                  class="link_circular_play_store"
-                  target="_blank"
-                  ><i class="bx bxl-play-store"></i
-                ><span class="escondido">Play Store</span></a>
-                <a
-                  href="https://apps.apple.com/ec/app/puce-app/id1637743052"
-                  class="link_circular_appstore"
-                  target="_blank"
-                  ><i class="bx bxl-apple"></i
-                ><span class="escondido">Apple Store</span></a>
-                <a
-                  href="https://www.canva.com/design/DAFqaFpAE-s/watch"
-                  class="link_circular_negro"
-                  target="_blank"
-                  ><i class="bx bx-video"></i
-                ><span class="escondido">Canva</span></a>
-              </aside>
-              <img
-                src="datos_proyectos/puceapp.jpeg"
-                alt="Promocional PUCEAPP"
-                class="background"
-              />
-              <img
-                src="datos_proyectos/puceapp_proy.png"
-                alt="Proyecto PUCEAPP"
-                class="proyecto"
-              />
-              <section class="layer">
-                <div class="info">
-                  <h1>PUCEAPP</h1>
-                  <p>
-                    PUCEAPP mejora la experiencia universitaria con reservas de
-                    espacios y servicios específicos para estudiantes, docentes
-                    y administrativos, además de ofrecer un carnet digital con
-                    código QR para acceso al campus.
-                  </p>
-                  <div class="fondo_difuminado">
-                    <img src="iconos/android_icon.png" alt="Android" />
-                    <img src="iconos/kotlin_icon.webp" alt="Kotlin" />
-                    <img src="iconos/php_icon.png" alt="PHP" />
-                    <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
-                    <img src="iconos/mysql_icon.png" alt="MySQL" />
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div class="card">
-              <aside>
-                <a
-                  href="https://www.puce.edu.ec/intranet"
-                  class="link_circular_linkedin"
-                  target="_blank"
-                  ><i class="bx bx-link-alt"></i
-                ><span class="escondido">Intranet PUCE</span></a>
-              </aside>
-              <img
-                src="datos_proyectos/intranet_puce.png"
-                alt="Promocional Intranet PUCE"
-                class="background"
-              />
-              <img
-                src="datos_proyectos/intranet_puce_1.png"
-                alt="Proyecto Intranet PUCE"
-                class="proyecto"
-              />
-              <div class="layer">
-                <div class="info">
-                  <h1>Intranet PUCE</h1>
-                  <p>
-                    Intranet interna de la PUCE que cuenta von varios accesos y
-                    servicios internos de la PUCE que ayudan en la gestión de
-                    varios de los procesos y datos que utilizan administrativos,
-                    docentes y estudiantes.
-                  </p>
-                  <div class="fondo_difuminado">
-                    <img src="iconos/php_icon.png" alt="PHP" />
-                    <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
-                    <img src="iconos/mysql_icon.png" alt="MySQL" />
-                    <img src="iconos/javascript_icon.webp" alt="JavaScript" />
-                    <img src="iconos/jquery_icon.webp" alt="JQuery" />
-                    <img src="iconos/bootstrap_icon.webp" alt="Bootstrap" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <aside>
-                <a
-                  href="https://puceapps.puce.edu.ec/reservas"
-                  class="link_circular_linkedin"
-                  target="_blank"
-                  ><i class="bx bx-link-alt"></i
-                ><span class="escondido">Resérvalo PUCE</span></a>
-              </aside>
-              <img
-                src="datos_proyectos/reservalo_puce.png"
-                alt="Promocional Reservalo PUCE"
-                class="background"
-              />
-              <img
-                src="datos_proyectos/reservalo_proy.png"
-                alt="Proyecto Reservalo PUCE"
-                class="proyecto"
-              />
-              <div class="layer">
-                <div class="info">
-                  <h1>Resérvalo</h1>
-                  <p>
-                    Sistema de reserva de espacios físicos dentro de la
-                    universidad, este aplicativo permite que según los perfiles
-                    y permisos del usuario, este pueda realizar una reserva de
-                    un espacio físico dentro del campus de la univiersidad.
-                  </p>
-                  <div class="fondo_difuminado">
-                    <img src="iconos/php_icon.png" alt="PHP" />
-                    <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
-                    <img src="iconos/sqlserver_icon.png" alt="MS. SQL Server" />
-                    <img src="iconos/javascript_icon.webp" alt="JavaScript" />
-                    <img src="iconos/extjs_icon.svg" alt="Sencha ExtJS" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <aside>
-                <a
-                  href="https://www.puce.edu.ec/adn-puce/unete-a-nuestro-equipo/"
-                  class="link_circular_linkedin"
-                  target="_blank"
-                  ><i class="bx bx-link-alt"></i
-                ><span class="escondido">Únete a Nuestro Equipo PUCE</span></a>
-              </aside>
-              <img
-                src="datos_proyectos/unete_a_nuestro_equipo_puce.png"
-                alt="Promocional Unete a Nuestro Equipo PUCE"
-                class="background"
-              />
-              <img
-                src="datos_proyectos/unete_proy.png"
-                alt="Proyecto Unete a Nuestro Equipo PUCE"
-                class="proyecto"
-              />
-              <div class="layer">
-                <div class="info">
-                  <h1>Únete a Nuestro Equipo PUCE</h1>
-                  <p>
-                    Aplicativo para mostrar todas las nuevas ofertas de trabajo
-                    que se abren dentro de la universidad con los respectivos
-                    accesos a la plataforma de reclutamiento de la universidad.
-                  </p>
-                  <div class="fondo_difuminado">
-                    <img src="iconos/php_icon.png" alt="PHP" />
-                    <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
-                    <img src="iconos/mysql_icon.png" alt="MySQL" />
-                    <img src="iconos/javascript_icon.webp" alt="JavaScript" />
-                    <img src="iconos/jquery_icon.webp" alt="JQuery" />
-                    <img src="iconos/wordpress_icon.png" alt="WordPress" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <aside>
-                <a
-                  href="https://www.puce.edu.ec/adn-puce/unete-a-nuestro-equipo/"
-                  class="link_circular_linkedin"
-                  target="_blank"
-                  ><i class="bx bx-link-alt"></i
-                ><span class="escondido">Únete a Nuestro Equipo</span></a>
-                <a
-                  href="https://www.youtube.com/watch?v=pKQZ-QSDcbE"
-                  class="link_circular_gmail"
-                  target="_blank"
-                  ><i class="bx bxl-youtube"></i
-                ><span class="escondido">YouTube</span></a>
-              </aside>
-              <img
-                src="datos_proyectos/RODI_IDLE.gif"
-                alt="Promocional RODI"
-                class="background"
-              />
-              <img
-                src="datos_proyectos/RODI_PROY.png"
-                alt="Proyecto RODI"
-                class="proyecto"
-              />
-              <div class="layer">
-                <div class="info">
-                  <h1>RODI</h1>
-                  <p>
-                    Mascota de la dirección de informática de la PUCE, que se
-                    utiliza como forma de interactividad con la comunidad
-                    univeritaria a forma de realidad aumentada y holograma.
-                  </p>
-                  <div class="fondo_difuminado">
-                    <img src="iconos/php_icon.png" alt="PHP" />
-                    <img src="iconos/codeigniter_icon.webp" alt="CodeIgniter" />
-                    <img src="iconos/unity_icon.webp" alt="Unity 3D" />
-                    <img src="iconos/blender_icon.png" alt="Blender" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-      </article>
-      <article>
-        <section class="content-sobre-mi" id="titulo_sobre_mi">
-          <div>
-            <h1>Sobre mí</h1>
-            <p>
-              Me llamo David pero mis amigos me llaman Dave. Empecé en la
-              programación en el colegio en clases de computación con guía de mi
-              padre, tenía 15 años. Actualmente estoy
-              <strong
-                >liderando proyectos académicos y administrativos con desarrollo
-                de software para la PUCE</strong
-              >.
-            </p>
-            <br />
-            <p>
-              Algunas de mis mejores experiencias son:
-              <strong
-                >Dar un speaking sobre informática y desarrollo de
-                software</strong
-              >
-              para nuevos prospectos de estudiantes de Ingeniería de Sistemas,
-              esto hace algunos meses. Por otro lado, me encuentro participando
-              en un <strong>proyecto de realidad aumentada</strong> que me está
-              emocionando bastante y también tuve la oportunidad de participar
-              en el
-              <strong
-                >SpaceApps de la NASA en Ecuador
-                <img
-                  class="emoji_p"
-                  src="images/bandera_ecuador.png"
-                  alt="🇪🇨"
-                />
-                en 2015</strong
-              >.
-            </p>
-            <br />
-            <p>
-              Por último, me gustaría mencionar que en mis momentos libres,
-              además de mis hobbies como por ejemplo, la
-              <strong>guitarra</strong>, y mis temas de interés, como puede ser
-              la astronomía y la física, me gusta dedicar parte de ese tiempo al
-              <strong>desarrollo de videojuegos</strong>. De hecho, mi proyecto
-              de tesis para el pregrado fue un videojuego llamado
-              <strong>"CandyMath"</strong>.
-            </p>
-          </div>
-          <aside id="avatar_container">
-            <img
-              src="images/avatar_dp_2.webp"
-              alt="Avatar David Pazos"
-              id="imagen_avatar"
-            />
-          </aside>
-        </section>
-      </article>
+      </section>
+    </article>
+    <article>
+      <section class="content-sobre-mi" id="titulo_sobre_mi">
+        <div>
+          <h1>Sobre mí</h1>
+          <p>
+            Me llamo David pero mis amigos me llaman Dave. Empecé en la
+            programación en el colegio en clases de computación con guía de mi
+            padre, tenía 15 años. Actualmente estoy
+            <strong>liderando proyectos académicos y administrativos con desarrollo
+              de software para la PUCE</strong>.
+          </p>
+          <br />
+          <p>
+            Algunas de mis mejores experiencias son:
+            <strong>Dar un speaking sobre informática y desarrollo de
+              software</strong>
+            para nuevos prospectos de estudiantes de Ingeniería de Sistemas,
+            esto hace algunos meses. Por otro lado, me encuentro participando
+            en un <strong>proyecto de realidad aumentada</strong> que me está
+            emocionando bastante y también tuve la oportunidad de participar
+            en el
+            <strong>SpaceApps de la NASA en Ecuador
+              <img class="emoji_p" src="images/bandera_ecuador.webp" alt="🇪🇨" />
+              en 2015</strong>.
+          </p>
+          <br />
+          <p>
+            Por último, me gustaría mencionar que en mis momentos libres,
+            además de mis hobbies como por ejemplo, la
+            <strong>guitarra</strong>, y mis temas de interés, como puede ser
+            la astronomía y la física, me gusta dedicar parte de ese tiempo al
+            <strong>desarrollo de videojuegos</strong>. De hecho, mi proyecto
+            de tesis para el pregrado fue un videojuego llamado
+            <strong>"CandyMath"</strong>.
+          </p>
+        </div>
+        <aside id="avatar_container">
+          <img src="images/avatar_dp_2.webp" alt="Avatar David Pazos" id="imagen_avatar" />
+        </aside>
+      </section>
+    </article>
 
-      <article>
-        <section class="content-eventos" id="titulo_eventos">
-          <h1><i class="bx bx-calendar-event"></i> Eventos</h1>
-          <section>
-            <article class="evento_diploma_animado">
-              <a
-                target="_blank"
-                href="documentos/certificado_charla_davidpazos.pdf"
-                class="link_circular_color_fondo"
-                ><i class="bx bxs-download"></i
-              ><span class="escondido">Descargar</span></a>
-              <img
-                src="images/certificado_charla_davidpazos.png"
-                alt="Certificado Charla"
-                width="500"
-              />
-            </article>
-            <article class="evento_diploma_animado">
-              <a
-                target="_blank"
-                href="documentos/certificado_space_apps_2015.pdf"
-                class="link_circular_color_fondo"
-                ><i class="bx bxs-download"></i
-              ><span class="escondido">Descargar</span></a>
-              <img
-                src="images/certificado_space_apps_2015.webp"
-                alt="Certificado Charla"
-                width="500"
-              />
-            </article>
-          </section>
+    <article>
+      <section class="content-eventos" id="titulo_eventos">
+        <h1><i class="bx bx-calendar-event"></i> Eventos</h1>
+        <section>
+          <article class="evento_diploma_animado">
+            <a target="_blank" href="documentos/certificado_charla_davidpazos.pdf"><i class="bx bxs-download"></i><span
+                class="escondido">Descargar</span></a>
+            <img src="images/certificado_charla_davidpazos.webp" alt="Certificado Charla" width="500" />
+          </article>
+          <article class="evento_diploma_animado">
+            <a target="_blank" href="documentos/certificado_space_apps_2015.pdf"><i class="bx bxs-download"></i><span
+                class="escondido">Descargar</span></a>
+            <img src="images/certificado_space_apps_2015.webp" alt="Certificado Charla" width="500" />
+          </article>
         </section>
-      </article>
+      </section>
+    </article>
 
-      <article>
-        <section class="content-preparacion" id="titulo_preparacion">
-          <h1><i class="bx bxs-bookmarks"></i> Preparación</h1>
-          <h2>Académica</h2>
-          <section>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/título de_machiller_unidad_educativa_julio_maria_matovelle.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/título-de_machiller_unidad_educativa_julio_maria_matovelle.webp"
-                alt="Bachiller en Ciencias - Especialidad: Físico Matemático"
-              />
-              <span
-                >Bachiller en Ciencias - Especialidad: Físico Matemático</span
-              >
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/titulo de_ingenieria_de_software_y_computación_puce.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/titulo-de_ingenieria_de_software_y_computación_puce.webp"
-                alt="Ingeniería de Sistemas y Computación"
-              />
-              <span>Ingeniería de Sistemas y Computación</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/titulo_de_master_en_ingenieria_de_software_y_computación_unir.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/titulo_de_master_en_ingenieria_de_software_y_computación_unir.webp"
-                alt="Master Universitario en Ingeniería de Software y Sistemas Informáticos"
-              />
-              <span
-                >Master Universitario en Ingeniería de Software y Sistemas
-                Informáticos</span
-              >
-            </div>
-          </section>
-          <h2>Cursos</h2>
-          <h3>
-            <img
-              src="https://assets-global.website-files.com/6355acca8d905157a7de2e62/6596cd9a1cdd1824414d0112_63724d646ecb4bd4cbdf7440_LOGO%20NUCLIO%20DIGITAL%20SCHOOL-01-01.png"
-              alt="Nuclio"
-            />
-          </h3>
-          <section>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Curso_Introductorio_Full_Stack_Development.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Curso_Introductorio_Full_Stack_Development.webp"
-                alt="Curso Introductorio Full Stack Development"
-              />
-              <span>Curso Introductorio Full Stack Development</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Curso_Introductorio_Diseño_UX-UI.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Curso_Introductorio_Diseño_UX-UI.webp"
-                alt="Curso Introductorio Diseño UX-UI"
-              />
-              <span>Curso Introductorio Diseño UX-UI</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Curso_Introductorio_Data_Science_Nuclio.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Curso_Introductorio_Data_Science_Nuclio.webp"
-                alt="Curso Introductorio Data Science"
-              />
-              <span>Curso Introductorio Data Science</span>
-            </div>
-          </section>
-          <h3>
-            <img src="images/CEDIA.png" alt="Cedia" />
-          </h3>
-          <section>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Curso_de Programación_en_Shell_Script.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Curso_de_Programación_en_Shell_Script.png"
-                alt="Curso de programación en Shell Script"
-              />
-              <span>Curso de programación en Shell Script</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Curso_de Virtualización_de_Servidores.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Curso_de_Virtualización_de_Servidores.png"
-                alt="Curso de Virtualización de Servidores"
-              />
-              <span>Curso de Virtualización de Servidores</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Curso_de_Adminiatración_de Servicios_de_Red.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Curso_de_Adminiatración_de_Servicios_de_Red.png"
-                alt="Curso de Administración de Servicios de Red"
-              />
-              <span>Curso de Administración de Servicios de Red</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/Curso_de_PHP_101.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img src="images/Curso_de_PHP_101.png" alt="Curso de PHP 101" />
-              <span>Curso de PHP 101</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/Curso_de_PHP_RDF.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img src="images/Curso_de_PHP_RDF.png" alt="Curso de PHP RDF" />
-              <span>Curso de PHP RDF</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Curso_de_Programación_Limpia_2.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Curso_de_Programación_Limpia_2.png"
-                alt="Curso de Programación Limpia 2"
-              />
-              <span>Curso de Programación Limpia 2</span>
-            </div>
-          </section>
-          <h3>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png"
-              alt="Nuclio"
-            />
-          </h3>
-          <section>
-            <div>
-              <a target="_blank" href="documentos/UDEMY_CodeIgniter_4.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/UDEMY_CodeIgniter_4.webp"
-                alt="CodeIgniter 4 desde Cero + Integración con Bootstrap 4 o
-              5"
-              />
-              <span
-                >CodeIgniter 4 desde Cero + Integración con Bootstrap 4 o
-                5</span
-              >
-            </div>
-          </section>
-          <h3>
-            <img
-              src="https://seeklogo.com/images/P/platzi-logo-98005E6AD6-seeklogo.com.png"
-              alt="Platzi"
-            />
-          </h3>
-          <section>
-            <div>
-              <a target="_blank" href="documentos/diploma-backend.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-backend.png"
-                alt="Introducción al desarrollo Backend"
-              />
-              <span>Introducción al desarrollo Backend</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-fundamentos-node.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-fundamentos-node.png"
-                alt="Fundamentos de Node.js"
-              />
-              <span>Fundamentos de Node.js</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-backend-nodejs.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-backend-nodejs.png"
-                alt="Backend con Node.js: API REST con Express.js"
-              />
-              <span>Backend con Node.js: API REST con Express.js</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-npm.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-npm.png"
-                alt="NPM: Gestión de Paquetes y Dependencias en JavaScript"
-              />
-              <span>NPM: Gestión de Paquetes y Dependencias en JavaScript</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/diploma-frontend-developer.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-frontend-developer.png"
-                alt="Frontend Developer"
-              />
-              <span>Frontend Developer</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/diploma-frontend-developer-practico.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-frontend-developer-practico.png"
-                alt="Práctico de Frontend Developer"
-              />
-              <span>Práctico de Frontend Developer</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/diploma-basico-javascript.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-basico-javascript.png"
-                alt="Básico de JavaScript"
-              />
-              <span>Básico de JavaScript</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/diploma-javascript-practico.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-javascript-practico.png"
-                alt="JavaScript"
-              />
-              <span>JavaScript</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-react.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img src="images/diploma-react.png" alt="React.js" />
-              <span>React.js</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/diploma-profesional-nextjs.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-profesional-nextjs.png"
-                alt="Profesional de Next.js"
-              />
-              <span>Profesional de Next.js</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-c-plus-plus.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img src="images/diploma-c-plus-plus.png" alt="C++ Básico" />
-              <span>C++ Básico</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-csharp.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-csharp.png"
-                alt="C++: Fundamentos, Variables y Operadores"
-              />
-              <span>C++: Fundamentos, Variables y Operadores</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-git-github.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img src="images/diploma-git-github.png" alt="Git y GitHub" />
-              <span>Git y GitHub</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-kotlin.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img src="images/diploma-kotlin.png" alt="Kotlin desde Cero" />
-              <span>Kotlin desde Cero</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-swift-5.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/diploma-swift-5.png"
-                alt="Fundamentos de Programación en Swift"
-              />
-              <span>Fundamentos de Programación en Swift</span>
-            </div>
-            <div>
-              <a target="_blank" href="documentos/diploma-swift.pdf">
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img src="images/diploma-swift.png" alt="Programación en Swift" />
-              <span>Programación en Swift</span>
-            </div>
-          </section>
-          <h2>Certificaciones</h2>
-          <section>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Certificado_Success_Factors_y_SAP.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Certificado_Success_Factors_y_SAP.webp"
-                alt="Certificado Success Factors y SAP"
-              />
-              <span>Certificado Success Factors y SAP</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Certificado_de_SCRUM_FUNDAMENTALS.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Certificado_de_SCRUM_FUNDAMENTALS.webp"
-                alt="Scrum Fundamentals"
-              />
-              <span>Scrum Fundamentals</span>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Certificado_de_Curso_de_SCRUM_MASTER.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Certificado_de_Curso_de_SCRUM_MASTER.webp"
-                alt="Scrum Master"
-              />
-              <span>Scrum Master</span>
-            </div>
-          </section>
-          <h2>Idiomas</h2>
-          <section>
-            <div>
-              <a
-                target="_blank"
-                href="documentos/Suficiencia_en_Inglés_CEC-EPN.pdf"
-              >
-                <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
-              </a>
-              <img
-                src="images/Suficiencia_en_Inglés_CEC-EPN.webp"
-                alt="Suficiency in English"
-              />
-              <span>Suficiency in English</span>
-            </div>
-          </section>
+    <article>
+      <section class="content-preparacion" id="titulo_preparacion">
+        <h1><i class="bx bxs-bookmarks"></i> Preparación</h1>
+        <h2>Académica</h2>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/título de_machiller_unidad_educativa_julio_maria_matovelle.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/título-de_machiller_unidad_educativa_julio_maria_matovelle.webp"
+              alt="Bachiller en Ciencias - Especialidad: Físico Matemático" />
+            <span>Bachiller en Ciencias - Especialidad: Físico Matemático</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/titulo de_ingenieria_de_software_y_computación_puce.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/titulo-de_ingenieria_de_software_y_computación_puce.webp"
+              alt="Ingeniería de Sistemas y Computación" />
+            <span>Ingeniería de Sistemas y Computación</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/titulo_de_master_en_ingenieria_de_software_y_computación_unir.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/titulo_de_master_en_ingenieria_de_software_y_computación_unir.webp"
+              alt="Master Universitario en Ingeniería de Software y Sistemas Informáticos" />
+            <span>Master Universitario en Ingeniería de Software y Sistemas
+              Informáticos</span>
+          </div>
         </section>
-      </article>
-    </main>
-    <footer>
-      © 2024 <strong>David Pazos</strong>. Casi todos los derechos reservados
-      <br />
-      Agradecimientos y mención a
-      <strong
-        ><a href="https://porfolio.dev/" target="_blank">midudev</a></strong
-      >.
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        <h2>Cursos</h2>
+        <h3>
+          <img src="images/nuclio-logo.webp" alt="Nuclio" />
+        </h3>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/Curso_Introductorio_Full_Stack_Development.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_Introductorio_Full_Stack_Development.webp"
+              alt="Curso Introductorio Full Stack Development" />
+            <span>Curso Introductorio Full Stack Development</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_Introductorio_Diseño_UX-UI.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_Introductorio_Diseño_UX-UI.webp" alt="Curso Introductorio Diseño UX-UI" />
+            <span>Curso Introductorio Diseño UX-UI</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_Introductorio_Data_Science_Nuclio.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_Introductorio_Data_Science_Nuclio.webp" alt="Curso Introductorio Data Science" />
+            <span>Curso Introductorio Data Science</span>
+          </div>
+        </section>
+        <h3>
+          <img src="images/CEDIA.webp" alt="Cedia" />
+        </h3>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/Curso_de Programación_en_Shell_Script.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_de_Programación_en_Shell_Script.webp" alt="Curso de programación en Shell Script" />
+            <span>Curso de programación en Shell Script</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de Virtualización_de_Servidores.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_de_Virtualización_de_Servidores.webp" alt="Curso de Virtualización de Servidores" />
+            <span>Curso de Virtualización de Servidores</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_Adminiatración_de Servicios_de_Red.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_de_Adminiatración_de_Servicios_de_Red.webp"
+              alt="Curso de Administración de Servicios de Red" />
+            <span>Curso de Administración de Servicios de Red</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_PHP_101.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_de_PHP_101.webp" alt="Curso de PHP 101" />
+            <span>Curso de PHP 101</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_PHP_RDF.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_de_PHP_RDF.webp" alt="Curso de PHP RDF" />
+            <span>Curso de PHP RDF</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Curso_de_Programación_Limpia_2.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Curso_de_Programación_Limpia_2.webp" alt="Curso de Programación Limpia 2" />
+            <span>Curso de Programación Limpia 2</span>
+          </div>
+        </section>
+        <h3>
+          <img src="images/Udemy_logo.webp" alt="Nuclio" />
+        </h3>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/UDEMY_CodeIgniter_4.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/UDEMY_CodeIgniter_4.webp" alt="CodeIgniter 4 desde Cero + Integración con Bootstrap 4 o
+              5" />
+            <span>CodeIgniter 4 desde Cero + Integración con Bootstrap 4 o
+              5</span>
+          </div>
+        </section>
+        <h3>
+          <img src="images/platzi-logo.webp" alt="Platzi" />
+        </h3>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/diploma-backend.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-backend.webp" alt="Introducción al desarrollo Backend" />
+            <span>Introducción al desarrollo Backend</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-fundamentos-node.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-fundamentos-node.webp" alt="Fundamentos de Node.js" />
+            <span>Fundamentos de Node.js</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-backend-nodejs.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-backend-nodejs.webp" alt="Backend con Node.js: API REST con Express.js" />
+            <span>Backend con Node.js: API REST con Express.js</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-npm.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-npm.webp" alt="NPM: Gestión de Paquetes y Dependencias en JavaScript" />
+            <span>NPM: Gestión de Paquetes y Dependencias en JavaScript</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-frontend-developer.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-frontend-developer.webp" alt="Frontend Developer" />
+            <span>Frontend Developer</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-frontend-developer-practico.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-frontend-developer-practico.webp" alt="Práctico de Frontend Developer" />
+            <span>Práctico de Frontend Developer</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-basico-javascript.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-basico-javascript.webp" alt="Básico de JavaScript" />
+            <span>Básico de JavaScript</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-javascript-practico.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-javascript-practico.webp" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-react.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-react.webp" alt="React.js" />
+            <span>React.js</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-profesional-nextjs.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-profesional-nextjs.webp" alt="Profesional de Next.js" />
+            <span>Profesional de Next.js</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-c-plus-plus.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-c-plus-plus.webp" alt="C++ Básico" />
+            <span>C++ Básico</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-csharp.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-csharp.webp" alt="C++: Fundamentos, Variables y Operadores" />
+            <span>C++: Fundamentos, Variables y Operadores</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-git-github.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-git-github.webp" alt="Git y GitHub" />
+            <span>Git y GitHub</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-kotlin.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-kotlin.webp" alt="Kotlin desde Cero" />
+            <span>Kotlin desde Cero</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-swift-5.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-swift-5.webp" alt="Fundamentos de Programación en Swift" />
+            <span>Fundamentos de Programación en Swift</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/diploma-swift.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/diploma-swift.webp" alt="Programación en Swift" />
+            <span>Programación en Swift</span>
+          </div>
+        </section>
+        <h2>Certificaciones</h2>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/Certificado_Success_Factors_y_SAP.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Certificado_Success_Factors_y_SAP.webp" alt="Certificado Success Factors y SAP" />
+            <span>Certificado Success Factors y SAP</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Certificado_de_SCRUM_FUNDAMENTALS.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Certificado_de_SCRUM_FUNDAMENTALS.webp" alt="Scrum Fundamentals" />
+            <span>Scrum Fundamentals</span>
+          </div>
+          <div>
+            <a target="_blank" href="documentos/Certificado_de_Curso_de_SCRUM_MASTER.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Certificado_de_Curso_de_SCRUM_MASTER.webp" alt="Scrum Master" />
+            <span>Scrum Master</span>
+          </div>
+        </section>
+        <h2>Idiomas</h2>
+        <section>
+          <div>
+            <a target="_blank" href="documentos/Suficiencia_en_Inglés_CEC-EPN.pdf">
+              <i class="bx bxs-download"></i><span class="escondido">Descargar</span>
+            </a>
+            <img src="images/Suficiencia_en_Inglés_CEC-EPN.webp" alt="Suficiency in English" />
+            <span>Suficiency in English</span>
+          </div>
+        </section>
+      </section>
+    </article>
+  </main>
+  <footer>
+    © 2024 <strong>David Pazos</strong>. Casi todos los derechos reservados
+    <br />
+    Agradecimientos y mención a
+    <strong><a href="https://porfolio.dev/" target="_blank">midudev</a></strong>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
