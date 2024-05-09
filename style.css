@@ -75,11 +75,6 @@ main article {
     transform: translate(-30px, 30px) scale(1);
     box-shadow: 0 0 25px whitesmoke, 0 0 150px 15px white;
   }
-  /*50% {
-    transform: translate(0px, 0px) scale(1.03);
-    box-shadow: 0 0 15px whitesmoke, 0 0 120px 12px white;
-    background-color: white;
-  }*/
   100% {
     box-shadow: 0 0 10px whitesmoke, 0 0 50px 5px white;
     background-color: white;
@@ -150,12 +145,12 @@ main article {
 
 .urano {
   right: 50px;
-  top: 485vh;
+  top: 475vh;
 }
 
 .neptuno {
   left: 50px;
-  top: 470vh;
+  top: 450vh;
 }
 
 .luna {
@@ -450,7 +445,8 @@ header {
 .emoji_p {
   width: 15px;
   height: 15px;
-  padding-top: px;
+  line-height: 1.8;
+  text-align: center;
 }
 
 .content-presentacion aside img {
@@ -703,7 +699,7 @@ main {
 
 .card {
   width: 20vw;
-  height: 500px;
+  height: 60vh;
   border-radius: 15px;
   border: white 2px solid;
   overflow: hidden;
@@ -745,53 +741,29 @@ main {
 }
 
 .card .layer {
-  width: 35vw;
-  height: 65vh;
-  padding-inline: 1vw;
-  margin-top: -65vh;
-  position: relative;
-  color: white;
-  transition: 300ms;
-  align-self: flex-end;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
-}
-
-.card .layer .info {
-  width: 32vw;
-  position: absolute;
+  height: 100%;
+  position: sticky;
+  bottom: 0;
+  padding-inline: 5%;
   opacity: 0;
-  bottom: 5vh;
-  transition: 500ms;
-  margin-bottom: 0px;
-}
-
-@media (max-width: 1490px) {
-  .card .layer .info {
-    width: 31vw;
-  }
-}
-
-@media (max-width: 1200px) {
-  .card .layer .info {
-    width: 30vw;
-  }
-}
-
-@media (max-width: 800px) {
-  .card .layer .info {
-    width: 29vw;
-  }
+  color: white;
+  transition: 750ms;
+  background: linear-gradient(to top, black 25%, transparent 75%);
+  /*background-color: black;*/
 }
 
 .card:hover .layer {
-  width: 100%;
-}
-
-.card:hover .layer .info {
   opacity: 1;
 }
 
+.card .layer .info {
+  position: relative;
+  top: 90%;
+  transform: translateY(-90%);
+}
+
 .info h1 {
+  text-align: center;
   font-size: 35px;
   font-weight: bold;
   color: wheat;
@@ -801,7 +773,7 @@ main {
 
 .info p {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   margin-top: 1vh;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -821,7 +793,8 @@ main {
 .card aside {
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   z-index: 1;
   margin-top: 1.5vh;
   margin-left: 1.5vh;
@@ -873,6 +846,11 @@ main {
   background: #0d1117;
 }
 
+.link_circular_blanco {
+  background: white;
+  color: black !important;
+}
+
 .link_circular_gmail {
   background: white;
   color: #c71610 !important;
@@ -911,17 +889,20 @@ main {
 }
 
 .fondo_difuminado {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  padding: 15px;
-  align-items: end;
+  padding: 10px;
 }
 
 .fondo_difuminado img {
-  height: 40px;
+  height: 30px;
 }
 
 .texto-blanco {
@@ -1262,6 +1243,37 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .card {
+    width: 100%;
+  }
+
+  .card .layer {
+    opacity: 1;
+  }
+
+  .info p {
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+  }
+
+  .mercurio {
+    top: 680vh;
+  }
+  
+  .venus {
+    top: 760vh;
+  }
+
+  .urano {
+    left: 0;
+    top: 890vh;
+  }
+
+  .neptuno {
+    right: 0;
+    top: 840vh;
+  }
+
   .content-presentacion div h1 span {
     font-size: 27px;
   }
@@ -1304,12 +1316,6 @@ footer {
     margin-left: 20px;
     width: 100%;
   }
-  /*.curriculum {
-    margin-right: 20px;
-    width: 130px;
-    max-width: 130px;
-    min-width: 130px;
-  }*/
 
   .eclipse {
     width: 100px;
@@ -1365,39 +1371,6 @@ footer {
     width: 100%;
     height: 50%;
     flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-    height: 50vh;
-  }
-
-  .card:hover {
-    width: 100%;
-    height: 50vh;
-  }
-
-  .card .background {
-    position: fixed;
-  }
-
-  .card .layer {
-    width: 100%;
-    padding-inline: 3vw;
-  }
-
-  .card .layer .info {
-    opacity: 1;
-    width: 72vw;
-  }
-
-  .fondo_difuminado img {
-    height: 30px;
-  }
-
-  .info p {
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
   }
 
   .menu_lateral {
@@ -1485,11 +1458,12 @@ footer {
   }
 
   .card aside {
-    opacity: 1;
-  }
-
-  .card aside {
+    position: absolute;
     flex-direction: row;
+    padding-right: 1.5vh;
+    max-width: 74vw;
+    width: 74vw;
+    opacity: 1;
   }
 
   .content-presentacion {
