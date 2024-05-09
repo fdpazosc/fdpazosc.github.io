@@ -96,8 +96,8 @@ main article {
   view-timeline-name: --planeta;
   view-timeline-axis: block;
   animation-timeline: --planeta;
-  animation-name: mostrarElementoScroll1;
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 15% cover 75%;
+  animation-fill-mode: both;
   position: absolute;
   filter: brightness(0.5);
   z-index: -1;
@@ -105,10 +105,28 @@ main article {
 
 @keyframes mostrarElementoScroll1 {
   from {
-    scale: 25%;
+    scale: 15%;
   }
   to {
     scale: 100%;
+  }
+}
+
+@keyframes moverElementoScrollDerecha1 {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(13vw);
+  }
+}
+
+@keyframes moverElementoScrollIzquierda1 {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-13vw);
   }
 }
 
@@ -119,44 +137,53 @@ main article {
 }
 
 .jupiter {
-  right: 0;
+  right: 15vw;
   top: 120vh;
+  animation-name: mostrarElementoScroll1, moverElementoScrollDerecha1;
 }
 
 .marte {
-  left: 50px;
+  left: 15vw;
   top: 185vh;
+  animation-name: mostrarElementoScroll1, moverElementoScrollIzquierda1;
 }
 
 .saturno {
-  left: 30px;
-  top: 230vh;
+  left: 15vw;
+  top: 225vh;
+  animation-name: mostrarElementoScroll1, moverElementoScrollIzquierda1;
 }
 
 .mercurio {
-  left: 30px;
+  left: 15vw;
   top: 360vh;
+  animation-name: mostrarElementoScroll1, moverElementoScrollIzquierda1;
 }
 
 .venus {
-  right: 50px;
+  right: 15vw;
   top: 395vh;
+  animation-name: mostrarElementoScroll1, moverElementoScrollDerecha1;
 }
 
 .urano {
-  right: 50px;
+  right: 15vw;
   top: 475vh;
+  animation-name: mostrarElementoScroll1, moverElementoScrollDerecha1;
 }
 
 .neptuno {
-  left: 50px;
+  left: 15vw;
   top: 450vh;
+  animation-name: mostrarElementoScroll1, moverElementoScrollIzquierda1;
+  animation-range: entry 25% cover 100%;
 }
 
 .luna {
   height: 25vh;
-  right: 5vh;
+  right: 5vw;
   bottom: 55vh;
+  filter: brightness(0.35);
 }
 
 .planeta_lado {
@@ -252,7 +279,7 @@ header {
 
 /* Estilos para el pulgar de la barra de desplazamiento cuando se desplaza */
 ::-webkit-scrollbar-thumb:active {
-  cursor: url("images/startup3.webp"), auto;
+  cursor: url("images/startup2.webp"), auto;
   background-color: yellow; /* Color del pulgar al hacer clic */
 }
 
@@ -701,7 +728,7 @@ main {
   width: 20vw;
   height: 60vh;
   border-radius: 15px;
-  border: white 2px solid;
+  border: white 2px groove;
   overflow: hidden;
   box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.2);
   transition: 500ms;
@@ -812,8 +839,8 @@ main {
   overflow: hidden;
   box-shadow: 2px 2px 3px black;
   font-size: 35px;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -824,6 +851,13 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  transition: 300ms;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card aside a:hover {
+  box-shadow: 0 0 5px white, 0 0 5px 5px white;
+  scale: 1.1;
 }
 
 .link_circular_azul {
@@ -1059,6 +1093,11 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
+.evento_diploma_animado a:first-child:hover {
+  box-shadow: 0 0 5px yellow, 0 0 5px 5px yellow;
+  scale: 1.1;
+}
+
 .evento_diploma_animado img:last-child::before {
   content: "";
   position: relative;
@@ -1186,6 +1225,11 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
+.content-preparacion section div a:hover {
+  box-shadow: 0 0 2px yellow, 0 0 2px 2px yellow;
+  scale: 1.1;
+}
+
 .content-preparacion section div span {
   position: absolute;
   overflow: hidden;
@@ -1251,6 +1295,12 @@ footer {
     opacity: 1;
   }
 
+  .card aside a {
+    font-size: 35px;
+    width: 55px;
+    height: 55px;
+  }
+
   .info p {
     -webkit-line-clamp: 10;
     line-clamp: 10;
@@ -1265,13 +1315,13 @@ footer {
   }
 
   .urano {
-    left: 0;
+    left: -10vw;
     top: 890vh;
   }
 
   .neptuno {
-    right: 0;
-    top: 840vh;
+    right: 1vw;
+    top: 820vh;
   }
 
   .content-presentacion div h1 span {
@@ -1287,7 +1337,7 @@ footer {
   }
 
   .linea_vertical_central {
-    height: 87.5%;
+    height: 91%;
     margin-top: 140px;
   }
 
