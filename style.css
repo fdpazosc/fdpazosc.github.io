@@ -1,7 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: monospace, sans-serif;
+}
+
+.default-font-size {
+  font-size: 20px;
 }
 
 html {
@@ -187,12 +191,12 @@ main article {
 }
 
 .planeta_lado {
-  width: 700px;
+  width: 800px;
   position: absolute;
   top: 300px;
-  left: -10%;
+  left: -15%;
   z-index: -3;
-  transform: rotate(120deg);
+  transform: rotate(65deg);
   animation: planetaOscuro 7.5s forwards;
 }
 
@@ -799,7 +803,7 @@ main {
 /************* Volver a arreglar este color ***************/
 
 .info p {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   margin-top: 1vh;
   overflow: hidden;
@@ -1233,7 +1237,7 @@ main {
 .content-preparacion section div span {
   position: absolute;
   overflow: hidden;
-  font-size: 85%;
+  font-size: 20px;
   padding: 10px;
   bottom: 0;
   left: 0;
@@ -1293,6 +1297,7 @@ footer {
 
   .card .layer {
     opacity: 1;
+    background: linear-gradient(to top, black 35%, transparent 100%);
   }
 
   .card aside a {
@@ -1376,7 +1381,7 @@ footer {
 
   .planeta_lado {
     width: 70%;
-    top: 150px;
+    top: 200px;
   }
 
   .estrellas {
@@ -1545,6 +1550,7 @@ footer {
 
   .content-sobre-mi div p {
     width: 100%;
+    shape-outside: margin-box;
   }
 
   .content-sobre-mi aside img {
