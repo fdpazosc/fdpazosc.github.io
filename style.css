@@ -1230,7 +1230,7 @@ main {
 }
 
 .content-preparacion section div a:hover {
-  box-shadow: 0 0 2px yellow, 0 0 2px 2px yellow;
+  /*box-shadow: 0 0 2px yellow, 0 0 2px 2px yellow;*/
   scale: 1.1;
 }
 
@@ -1267,7 +1267,7 @@ main {
   border-radius: 7px;
   filter: contrast(120%);
   transform: scale(1.35);
-  border: 2px solid white;
+  /*border: 2px solid white;*/
 }
 
 footer {
