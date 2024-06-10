@@ -1165,9 +1165,9 @@ main {
 }
 
 .content-preparacion h3 img {
-  height: 40px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.85);
+  height: 30px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.55);
   padding: 15px;
 }
 
