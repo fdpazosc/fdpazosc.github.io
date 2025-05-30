@@ -1,0 +1,191 @@
+/* Base - Light Mode */
+
+/* Estilos para el riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del riel */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: white; /* Color del pulgar */
+  border-radius: 6px; /* Radio de borde del pulgar */
+  border: 3px solid transparent; /* Borde del pulgar */
+  transition: background-color 0.3s ease-in-out; /* Transición de 0.3 segundos */
+}
+
+/* Estilos cuando se pasa el mouse sobre la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+  cursor: url("images/startup5.webp"), auto;
+  background-color: yellow; /* Color del pulgar al pasar el mouse */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento cuando se desplaza */
+::-webkit-scrollbar-thumb:active {
+  cursor: url("images/startup2.webp"), auto;
+  background-color: yellow; /* Color del pulgar al hacer clic */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background: #f9f9f9;
+  line-height: 1.6;
+}
+
+a {
+  color: #1A4485;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.info-centrico {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.info-centrico > .container {
+  width: 70%;
+}
+
+.container {
+  margin: 2.5rem 0rem;
+}
+
+/* Header */
+header {
+  background: #1A4485;
+  color: white;
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 2.5rem; /* aumento padding interno */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1A4485;
+  font-weight: bold;
+}
+
+.cta {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1A4485;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #e0e0e0;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  
+
+  .cta {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+
+
+  ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* 🌙 Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #e0e0e0;
+  }
+
+  header {
+    background: #1a1a1a;
+    color: #ffffff;
+  }
+
+  section {
+    background: #1f1f1f;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.03);
+  }
+
+  a {
+    color: #5fa2dd;
+  }
+
+  ul li::before {
+    color: #5fa2dd;
+  }
+
+  .cta {
+    color: #5fa2dd;
+  }
+
+  footer {
+    background: #1a1a1a;
+    color: #aaa;
+  }
+}
