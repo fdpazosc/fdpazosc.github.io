@@ -1245,17 +1245,17 @@ main {
   align-items: center;
   justify-content: center;
   align-content: center;
-  align-self: center;
+  align-self: auto !important;
   color: black;
   border-radius: 50%;
   display: flex;
   flex-direction: row;
-  justify-self: center;
+  /*justify-self: center;*/
   transition: 0.3s ease;
   align-self: center;
   opacity: 0;
-  margin-top: 7px;
-  margin-left: 7px;
+  margin-top: 2%;
+  margin-left: 2%;
   background-color: yellow;
   -webkit-tap-highlight-color: transparent;
 }
